@@ -1,0 +1,75 @@
+@charset "UTF-8";
+/**
+ * Default Theme
+ */
+/**
+ * Mixes a color with white. It's different from lighten()
+ *
+ * @param {color} $color
+ * @param {number (percentage)} $percent [The amout of white to be mixed in]
+ * @return {color}
+ *
+ * @example
+ *   .element {
+ *     background-color: tint(#6ecaa6 , 40%);
+ *   }
+ *
+ *   // CSS Output
+ *   .element {
+ *     background-color: #a8dfc9;
+ *   }
+ */
+/* The Color of O2Team Brand */
+/* Color */
+/* Color Palette */
+/* Text Color */
+/* Link */
+/* 背景色 */
+/* 边框颜色 */
+/* 图标颜色 */
+/* Border Radius */
+/* 透明度 */
+/* Font */
+/* Line Height */
+/* 水平间距 */
+/* 垂直间距 */
+/* 图标尺寸 */
+/* z-index */
+/* timing function */
+/**
+ * CSS cubic-bezier timing functions
+ * http://bourbon.io/docs/#timing-functions
+ */
+.at-pagination {
+  position: relative;
+  margin: 0 0.85333rem;
+  font-size: 0;
+  overflow: hidden; }
+  .at-pagination__btns {
+    display: -webkit-flex;
+    display: flex; }
+    .at-pagination__btns-prev {
+      -webkit-flex: 1;
+              flex: 1;
+      text-align: left; }
+    .at-pagination__btns-next {
+      -webkit-flex: 1;
+              flex: 1;
+      text-align: right; }
+  .at-pagination__number {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2.13333rem;
+    height: 1.28rem;
+    color: #333;
+    font-size: 0.59733rem;
+    text-align: center;
+    line-height: 1.28rem;
+    overflow: hidden;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+    .at-pagination__number-current {
+      color: #6190E8; }
+
+

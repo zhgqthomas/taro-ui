@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/**
+ * Default Theme
+ */
+/**
+ * Mixes a color with white. It's different from lighten()
+ *
+ * @param {color} $color
+ * @param {number (percentage)} $percent [The amout of white to be mixed in]
+ * @return {color}
+ *
+ * @example
+ *   .element {
+ *     background-color: tint(#6ecaa6 , 40%);
+ *   }
+ *
+ *   // CSS Output
+ *   .element {
+ *     background-color: #a8dfc9;
+ *   }
+ */
+/* The Color of O2Team Brand */
+/* Color */
+/* Color Palette */
+/* Text Color */
+/* Link */
+/* 背景色 */
+/* 边框颜色 */
+/* 图标颜色 */
+/* Border Radius */
+/* 透明度 */
+/* Font */
+/* Line Height */
+/* 水平间距 */
+/* 垂直间距 */
+/* 图标尺寸 */
+/* z-index */
+/* timing function */
+/**
+ * CSS cubic-bezier timing functions
+ * http://bourbon.io/docs/#timing-functions
+ */
+.at-badge {
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+  vertical-align: middle; }
+  .at-badge__dot {
+    position: absolute;
+    right: -0.128rem;
+    top: -0.128rem;
+    width: 0.42667rem;
+    height: 0.42667rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #FF4949;
+    box-shadow: 0 0.08533rem 0.17067rem 0 rgba(233, 59, 61, 0.2); }
+  .at-badge__num {
+    font-size: 0.42667rem;
+    color: #fff;
+    height: 0.59733rem;
+    line-height: 0.59733rem;
+    position: absolute;
+    right: -6PX;
+    top: -0.29867rem;
+    -webkit-transform: translate(50%, 0);
+            transform: translate(50%, 0);
+    padding: 0 0.21333rem;
+    border-radius: 0.29867rem 0.29867rem 0.29867rem 0;
+    overflow: hidden;
+    background: #FF4949;
+    box-shadow: 0 0.08533rem 0.17067rem 0 rgba(233, 59, 61, 0.2); }
+
+.panel__content .badge-item {
+  margin-bottom: 0.42667rem; }
+  .panel__content .badge-item:last-child {
+    margin-bottom: 0; }
+  .panel__content .badge-item .subitem {
+    display: inline-block;
+    margin-left: 0.85333rem; }
+
