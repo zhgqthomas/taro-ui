@@ -1,11 +1,15 @@
 @charset "UTF-8";
+
 /**
  * Mixins
  */
+
 /* library */
+
 /**
  * 元素居中定位
  */
+
 /**
  * @example scss
  *
@@ -20,9 +24,11 @@
  *   display: block;
  * }
  */
+
 /**
  * 通用的遮罩
  */
+
 /**
  * Mixes a color with black. It's different from darken()
  *
@@ -40,6 +46,7 @@
  *     background-color: #664a20;
  *   }
  */
+
 /**
  * Mixes a color with white. It's different from lighten()
  *
@@ -57,10 +64,13 @@
  *     background-color: #a8dfc9;
  *   }
  */
+
 /* Flex Item */
+
 /**
  * Default Theme
  */
+
 /**
  * Mixes a color with white. It's different from lighten()
  *
@@ -78,30 +88,50 @@
  *     background-color: #a8dfc9;
  *   }
  */
+
 /* The Color of O2Team Brand */
+
 /* Color */
+
 /* Color Palette */
+
 /* Text Color */
+
 /* Link */
+
 /* 背景色 */
+
 /* 边框颜色 */
+
 /* 图标颜色 */
+
 /* Border Radius */
+
 /* 透明度 */
+
 /* Font */
+
 /* Line Height */
+
 /* 水平间距 */
+
 /* 垂直间距 */
+
 /* 图标尺寸 */
+
 /* z-index */
+
 /* timing function */
+
 /**
  * CSS cubic-bezier timing functions
  * http://bourbon.io/docs/#timing-functions
  */
+
 /**
  * Default Theme
  */
+
 /**
  * Mixes a color with white. It's different from lighten()
  *
@@ -119,36 +149,58 @@
  *     background-color: #a8dfc9;
  *   }
  */
+
 /* The Color of O2Team Brand */
+
 /* Color */
+
 /* Color Palette */
+
 /* Text Color */
+
 /* Link */
+
 /* 背景色 */
+
 /* 边框颜色 */
+
 /* 图标颜色 */
+
 /* Border Radius */
+
 /* 透明度 */
+
 /* Font */
+
 /* Line Height */
+
 /* 水平间距 */
+
 /* 垂直间距 */
+
 /* 图标尺寸 */
+
 /* z-index */
+
 /* timing function */
+
 /**
  * CSS cubic-bezier timing functions
  * http://bourbon.io/docs/#timing-functions
  */
+
 /**
  * 点击态
  */
+
 /**
  * 禁止态
  */
+
 /**
  * Default Theme
  */
+
 /**
  * Mixes a color with white. It's different from lighten()
  *
@@ -166,33 +218,54 @@
  *     background-color: #a8dfc9;
  *   }
  */
+
 /* The Color of O2Team Brand */
+
 /* Color */
+
 /* Color Palette */
+
 /* Text Color */
+
 /* Link */
+
 /* 背景色 */
+
 /* 边框颜色 */
+
 /* 图标颜色 */
+
 /* Border Radius */
+
 /* 透明度 */
+
 /* Font */
+
 /* Line Height */
+
 /* 水平间距 */
+
 /* 垂直间距 */
+
 /* 图标尺寸 */
+
 /* z-index */
+
 /* timing function */
+
 /**
  * CSS cubic-bezier timing functions
  * http://bourbon.io/docs/#timing-functions
  */
+
 /**
  * 设置placeholder 颜色
  */
+
 /**
  * Default Theme
  */
+
 /**
  * Mixes a color with white. It's different from lighten()
  *
@@ -210,41 +283,69 @@
  *     background-color: #a8dfc9;
  *   }
  */
+
 /* The Color of O2Team Brand */
+
 /* Color */
+
 /* Color Palette */
+
 /* Text Color */
+
 /* Link */
+
 /* 背景色 */
+
 /* 边框颜色 */
+
 /* 图标颜色 */
+
 /* Border Radius */
+
 /* 透明度 */
+
 /* Font */
+
 /* Line Height */
+
 /* 水平间距 */
+
 /* 垂直间距 */
+
 /* 图标尺寸 */
+
 /* z-index */
+
 /* timing function */
+
 /**
  * CSS cubic-bezier timing functions
  * http://bourbon.io/docs/#timing-functions
  */
+
 @-webkit-keyframes atRotate {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
+            transform: rotate(0deg);
+  }
+
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg); } }
+            transform: rotate(360deg);
+  }
+}
+
 @keyframes atRotate {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
+            transform: rotate(0deg);
+  }
+
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg); } }
+            transform: rotate(360deg);
+  }
+}
 
 .at-toast-overlay {
   top: 0;
@@ -254,7 +355,8 @@
   position: absolute;
   background-color: rgba(0, 0, 0, 0.3);
   position: fixed;
-  opacity: 0; }
+  opacity: 0;
+}
 
 .at-toast .toast-body {
   position: fixed;
@@ -266,35 +368,57 @@
   padding: 0.512rem 0.68267rem;
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 0.17067rem;
-  min-width: 5.46133rem; }
-  .at-toast .toast-body-content__icon {
-    line-height: 0;
-    text-align: center; }
-  .at-toast .toast-body-content__img {
-    line-height: 0;
-    text-align: center; }
-    .at-toast .toast-body-content__img-item {
-      width: 2.56rem;
-      height: 2.56rem; }
-  .at-toast .toast-body-content__info {
-    margin-top: 0.384rem;
-    color: #FFF;
-    line-height: 1.5;
-    font-size: 0.59733rem;
-    text-align: center; }
-  .at-toast .toast-body--text {
-    padding: 0.256rem 0.512rem;
-    line-height: 1.5;
-    min-width: initial; }
-    .at-toast .toast-body--text .toast-body-content__info {
-      margin-top: 0; }
-  .at-toast .toast-body.at-toast-body--custom-image, .at-toast .toast-body.at-toast-body--success, .at-toast .toast-body.at-toast-body--error, .at-toast .toast-body.at-toast-body--loading {
-    padding-bottom: 0.36267rem; }
+  min-width: 5.46133rem;
+}
+
+.at-toast .toast-body-content__icon {
+  line-height: 0;
+  text-align: center;
+}
+
+.at-toast .toast-body-content__img {
+  line-height: 0;
+  text-align: center;
+}
+
+.at-toast .toast-body-content__img-item {
+  width: 2.56rem;
+  height: 2.56rem;
+}
+
+.at-toast .toast-body-content__info {
+  margin-top: 0.384rem;
+  color: #FFF;
+  line-height: 1.5;
+  font-size: 0.59733rem;
+  text-align: center;
+}
+
+.at-toast .toast-body--text {
+  padding: 0.256rem 0.512rem;
+  line-height: 1.5;
+  min-width: initial;
+}
+
+.at-toast .toast-body--text .toast-body-content__info {
+  margin-top: 0;
+}
+
+.at-toast .toast-body.at-toast-body--custom-image,
+.at-toast .toast-body.at-toast-body--success,
+.at-toast .toast-body.at-toast-body--error,
+.at-toast .toast-body.at-toast-body--loading {
+  padding-bottom: 0.36267rem;
+}
 
 .at-toast-body--loading .toast-body-content__img-item {
   -webkit-animation: atRotate 1350ms linear infinite;
-          animation: atRotate 1350ms linear infinite; }
+          animation: atRotate 1350ms linear infinite;
+}
+
 
 .toast-page .example__body-button {
-  display: inline-block; }
+  display: inline-block;
+}
+
 
