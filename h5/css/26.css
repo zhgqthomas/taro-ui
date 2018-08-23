@@ -831,6 +831,11 @@
   background-color: #F0F0F0;
 }
 
+.at-nav-bar__container--hide {
+  display: inline-block;
+  visibility: hidden;
+}
+
 
 .doc-header {
   display: -webkit-flex;
