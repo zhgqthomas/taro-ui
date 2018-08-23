@@ -786,6 +786,24 @@
   border: 1PX solid #5c89e4;
 }
 
+.at-button__icon {
+  margin: 0 0.42667rem;
+  display: inline-block;
+  font-size: 0.59733rem;
+  -webkit-animation: loading-rotate 1s linear infinite;
+          animation: loading-rotate 1s linear infinite;
+}
+
+.at-button--circle {
+  border-radius: 2.13333rem;
+  overflow: hidden;
+  background-clip: border-box;
+}
+
+.at-button__text {
+  display: inline;
+}
+
 .at-button--small {
   display: inline-block;
   padding: 0 0.34133rem;
@@ -797,21 +815,8 @@
   line-height: 1.23733rem;
 }
 
-.at-button--circle {
-  border-radius: 2.13333rem;
-  overflow: hidden;
-  background-clip: border-box;
-}
-
-.at-button__icon {
-  margin: 0 0.42667rem;
-  display: inline-block;
-  -webkit-animation: loading-rotate 1s linear infinite;
-          animation: loading-rotate 1s linear infinite;
-}
-
-.at-button__text {
-  display: inline;
+.at-button--small .at-button__icon {
+  font-size: 0.59733rem;
 }
 
 @-webkit-keyframes loading-rotate {

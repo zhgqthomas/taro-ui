@@ -768,6 +768,7 @@
 .at-nav-bar__left_view {
   -webkit-flex: 2;
           flex: 2;
+  font-size: 18PX;
   text-align: left;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -805,6 +806,7 @@
 .at-nav-bar__text {
   display: inline-block;
   font-size: 16PX;
+  height: 100%;
   padding-left: 5PX;
   vertical-align: middle;
   line-height: 1;
@@ -816,6 +818,7 @@
 .at-nav-bar__container {
   width: 50%;
   height: 100%;
+  font-size: 18PX;
   display: inline-block;
   text-align: center;
   box-sizing: border-box;

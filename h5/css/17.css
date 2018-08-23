@@ -661,7 +661,8 @@
  */
 
 .at-modal-footer {
-  border-top: 0.02133rem #E5E5E5 solid;
+  /* prettier-ignore */
+  border-top: 1PX #E5E5E5 solid;
 }
 
 .at-modal-footer .at-modal-action {
@@ -699,7 +700,8 @@
 }
 
 .at-modal-footer .at-modal-action > button:not(:first-child) {
-  border-left: 0.02133rem #E5E5E5 solid;
+  /* prettier-ignore */
+  border-left: 1PX #E5E5E5 solid;
 }
 
 .at-modal-footer .at-modal-action > button:first-child:last-child {

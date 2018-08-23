@@ -334,7 +334,8 @@
   font-size: 0.59733rem;
   text-align: center;
   line-height: 1.5;
-  border-bottom: 0.02133rem #e2ecf4 solid;
+  /* prettier-ignore */
+  border-bottom: 1PX #e2ecf4 solid;
 }
 
 
@@ -1114,7 +1115,8 @@
 .at-action-sheet-item {
   padding: 0.512rem 0.512rem;
   font-size: 0.768rem;
-  border-bottom: 0.02133rem #e2ecf4 solid;
+  /* prettier-ignore */
+  border-bottom: 1PX #e2ecf4 solid;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
