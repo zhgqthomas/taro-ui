@@ -95,6 +95,7 @@
   overflow: hidden;
   background: #FF4949;
   box-shadow: 0 0.08533rem 0.17067rem 0 rgba(233, 59, 61, 0.2);
+  z-index: 1;
 }
 
 
