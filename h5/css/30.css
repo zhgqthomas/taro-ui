@@ -323,116 +323,485 @@
  * http://bourbon.io/docs/#timing-functions
  */
 
-.at-card {
-  border-top: 1PX #d6e4ef solid;
-  border-bottom: 1PX #d6e4ef solid;
-  border-right: 1PX #d6e4ef solid;
-  border-left: 1PX #d6e4ef solid;
-  margin: 0 0.512rem;
-  background-color: #FFF;
-  border-radius: 0.256rem;
+.at-list {
+  /* prettier-ignore */
+  border-top: 1PX #e2ecf4 solid;
+  position: relative;
+  background-color: white;
 }
 
-.at-card--full {
-  margin: 0;
-  border-radius: 0;
-  border-left: none;
-  border-right: none;
+.at-list::after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #e2ecf4;
+  /* prettier-ignore */
+  height: 1PX;
 }
 
-.at-card-header {
+.at-list::before {
+  content: " ";
+  left: 0;
+  width: 0.512rem;
+  z-index: 100;
+  position: absolute;
+  background-color: transparent;
+  /* prettier-ignore */
+  height: -webkit-calc(100% - 1PX);
+  height: calc(100% - 1PX);
+  top: 0;
+}
+
+.at-list--no-border {
+  border-top: none;
+}
+
+.at-list--no-border::after,
+.at-list--no-border::before {
+  content: initial;
+}
+
+
+@charset "UTF-8";
+
+/**
+ * Mixins
+ */
+
+/* library */
+
+/**
+ * 元素居中定位
+ */
+
+/**
+ * @example scss
+ *
+ * .element {
+ *   @include clearfix;
+ * }
+ *
+ * // CSS Output
+ * .element::after {
+ *   clear: both;
+ *   content: '';
+ *   display: block;
+ * }
+ */
+
+/**
+ * 通用的遮罩
+ */
+
+/**
+ * Mixes a color with black. It's different from darken()
+ *
+ * @param {color} $color
+ * @param {number (percentage)} $percent [The amount of black to be mixed in]
+ * @return {color}
+ *
+ * @example
+ *   .element {
+ *     background-color: shade(#ffbb52, 60%);
+ *   }
+ *
+ *   // CSS Output
+ *   .element {
+ *     background-color: #664a20;
+ *   }
+ */
+
+/**
+ * Mixes a color with white. It's different from lighten()
+ *
+ * @param {color} $color
+ * @param {number (percentage)} $percent [The amout of white to be mixed in]
+ * @return {color}
+ *
+ * @example
+ *   .element {
+ *     background-color: tint(#6ecaa6 , 40%);
+ *   }
+ *
+ *   // CSS Output
+ *   .element {
+ *     background-color: #a8dfc9;
+ *   }
+ */
+
+/* Flex Item */
+
+/**
+ * Default Theme
+ */
+
+/**
+ * Mixes a color with white. It's different from lighten()
+ *
+ * @param {color} $color
+ * @param {number (percentage)} $percent [The amout of white to be mixed in]
+ * @return {color}
+ *
+ * @example
+ *   .element {
+ *     background-color: tint(#6ecaa6 , 40%);
+ *   }
+ *
+ *   // CSS Output
+ *   .element {
+ *     background-color: #a8dfc9;
+ *   }
+ */
+
+/* The Color of O2Team Brand */
+
+/* Color */
+
+/* Color Palette */
+
+/* Text Color */
+
+/* Link */
+
+/* 背景色 */
+
+/* 边框颜色 */
+
+/* 图标颜色 */
+
+/* Border Radius */
+
+/* 透明度 */
+
+/* Font */
+
+/* Line Height */
+
+/* 水平间距 */
+
+/* 垂直间距 */
+
+/* 图标尺寸 */
+
+/* z-index */
+
+/* timing function */
+
+/**
+ * CSS cubic-bezier timing functions
+ * http://bourbon.io/docs/#timing-functions
+ */
+
+/**
+ * Default Theme
+ */
+
+/**
+ * Mixes a color with white. It's different from lighten()
+ *
+ * @param {color} $color
+ * @param {number (percentage)} $percent [The amout of white to be mixed in]
+ * @return {color}
+ *
+ * @example
+ *   .element {
+ *     background-color: tint(#6ecaa6 , 40%);
+ *   }
+ *
+ *   // CSS Output
+ *   .element {
+ *     background-color: #a8dfc9;
+ *   }
+ */
+
+/* The Color of O2Team Brand */
+
+/* Color */
+
+/* Color Palette */
+
+/* Text Color */
+
+/* Link */
+
+/* 背景色 */
+
+/* 边框颜色 */
+
+/* 图标颜色 */
+
+/* Border Radius */
+
+/* 透明度 */
+
+/* Font */
+
+/* Line Height */
+
+/* 水平间距 */
+
+/* 垂直间距 */
+
+/* 图标尺寸 */
+
+/* z-index */
+
+/* timing function */
+
+/**
+ * CSS cubic-bezier timing functions
+ * http://bourbon.io/docs/#timing-functions
+ */
+
+/**
+ * 点击态
+ */
+
+/**
+ * 禁止态
+ */
+
+/**
+ * Default Theme
+ */
+
+/**
+ * Mixes a color with white. It's different from lighten()
+ *
+ * @param {color} $color
+ * @param {number (percentage)} $percent [The amout of white to be mixed in]
+ * @return {color}
+ *
+ * @example
+ *   .element {
+ *     background-color: tint(#6ecaa6 , 40%);
+ *   }
+ *
+ *   // CSS Output
+ *   .element {
+ *     background-color: #a8dfc9;
+ *   }
+ */
+
+/* The Color of O2Team Brand */
+
+/* Color */
+
+/* Color Palette */
+
+/* Text Color */
+
+/* Link */
+
+/* 背景色 */
+
+/* 边框颜色 */
+
+/* 图标颜色 */
+
+/* Border Radius */
+
+/* 透明度 */
+
+/* Font */
+
+/* Line Height */
+
+/* 水平间距 */
+
+/* 垂直间距 */
+
+/* 图标尺寸 */
+
+/* z-index */
+
+/* timing function */
+
+/**
+ * CSS cubic-bezier timing functions
+ * http://bourbon.io/docs/#timing-functions
+ */
+
+/**
+ * 设置placeholder 颜色
+ */
+
+/**
+ * Default Theme
+ */
+
+/**
+ * Mixes a color with white. It's different from lighten()
+ *
+ * @param {color} $color
+ * @param {number (percentage)} $percent [The amout of white to be mixed in]
+ * @return {color}
+ *
+ * @example
+ *   .element {
+ *     background-color: tint(#6ecaa6 , 40%);
+ *   }
+ *
+ *   // CSS Output
+ *   .element {
+ *     background-color: #a8dfc9;
+ *   }
+ */
+
+/* The Color of O2Team Brand */
+
+/* Color */
+
+/* Color Palette */
+
+/* Text Color */
+
+/* Link */
+
+/* 背景色 */
+
+/* 边框颜色 */
+
+/* 图标颜色 */
+
+/* Border Radius */
+
+/* 透明度 */
+
+/* Font */
+
+/* Line Height */
+
+/* 水平间距 */
+
+/* 垂直间距 */
+
+/* 图标尺寸 */
+
+/* z-index */
+
+/* timing function */
+
+/**
+ * CSS cubic-bezier timing functions
+ * http://bourbon.io/docs/#timing-functions
+ */
+
+.at-list__item {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
           align-items: center;
   -webkit-box-align: center;
-  border-bottom: 1PX #e2ecf4 solid;
-  padding: 0.384rem 0.512rem;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  padding: 0.512rem 0.512rem;
   position: relative;
-}
-
-.at-card-header__title,
-.at-card-header__extra {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  box-sizing: border-box;
+  color: #333;
+  font-size: 0.68267rem;
   line-height: 1.5;
 }
 
-.at-card-header__thumb {
-  -webkit-flex: 0 0 0.68267rem;
-          flex: 0 0 0.68267rem;
-  -webkit-box-flex: 0;
-  height: 0.68267rem;
-  display: block;
-  line-height: 0;
-  margin-right: 0.34133rem;
+.at-list__item:active {
+  background-color: #F0F0F0;
 }
 
-.at-card-header__thumb-info {
+.at-list__item::after {
+  content: " ";
+  position: absolute;
+  width: -webkit-calc(100% - 0.512rem);
+  width: -webkit-calc(100% - 24px);
+  width: calc(100% - 0.512rem);
+  /* prettier-ignore */
+  height: 1PX;
+  background-color: #e2ecf4;
+  bottom: 0;
+  left: 0.512rem;
+}
+
+.at-list__item--thumb .item-thumb {
+  margin-right: 0.512rem;
+  width: 1.19467rem;
+  height: 1.19467rem;
+}
+
+.at-list__item--thumb .item-thumb-info {
   width: 100%;
   height: 100%;
 }
 
-.at-card-header__title {
-  -webkit-flex: auto;
-          flex: auto;
-  -webkit-box-flex: auto;
-  display: block;
-  font-size: 0.68267rem;
+.at-list__item--no-border::after {
+  content: initial;
 }
 
-.at-card-header__extra {
-  -webkit-flex: 0 0 auto;
-          flex: 0 0 auto;
+.at-list__item-content {
+  -webkit-flex: 1;
+          flex: 1;
+  -webkit-box-flex: 1;
+  overflow: hidden;
+  margin-right: 0.85333rem;
+}
+
+.at-list__item-extra {
+  -webkit-flex: 0 0 5.01333rem;
+          flex: 0 0 5.01333rem;
   -webkit-box-flex: 0;
-  max-width: 4.26667rem;
-  margin-left: 0.512rem;
-  font-size: 0.59733rem;
+  text-align: right;
 }
 
-.at-card-content {
-  padding: 0.512rem 0.512rem;
+.at-list__item .item-content__info-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: inherit;
+  font-size: inherit;
+  line-height: 1.5;
 }
 
-.at-card-content__info {
-  font-size: 0.59733rem;
-}
-
-.at-card-content__note {
-  margin-top: 0.384rem;
+.at-list__item .item-content__info-note {
   color: #999;
-  font-size: 0.512rem;
+  font-size: 0.59733rem;
+  line-height: 1.5;
 }
 
-
-.doc-header {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-          align-items: center;
-  padding: 1.28rem;
-  height: 3.84rem;
-}
-
-.doc-header__title {
-  position: relative;
-  height: 1.92rem;
-  color: #333;
-  font-size: 0.85333rem;
-  font-weight: bold;
-}
-
-.doc-header__title::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
+.at-list__item .item-extra__info,
+.at-list__item .item-extra__icon,
+.at-list__item .item-extra__image,
+.at-list__item .item-extra__switch {
   display: inline-block;
-  width: 2.56rem;
-  height: 2PX;
-  border-radius: 1PX;
-  background-color: #6190E8;
+}
+
+.at-list__item .item-extra__info {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #999;
+  max-width: 3.41333rem;
+  font-size: 0.68267rem;
+  vertical-align: middle;
+}
+
+.at-list__item .item-extra__icon {
+  margin-left: 0.21333rem;
+  margin-right: -0.21333rem;
+}
+
+.at-list__item .item-extra__switch {
+  vertical-align: middle;
+}
+
+.at-list__item .item-extra__image {
+  width: 1.19467rem;
+  height: 1.19467rem;
+  vertical-align: middle;
+}
+
+.at-list__item .item-extra__image-info {
+  width: 100%;
+  height: 100%;
 }
 
 

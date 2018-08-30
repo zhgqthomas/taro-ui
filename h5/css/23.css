@@ -1,6 +1,107 @@
 @charset "UTF-8";
 
 /**
+ * Default Theme
+ */
+
+/**
+ * Mixes a color with white. It's different from lighten()
+ *
+ * @param {color} $color
+ * @param {number (percentage)} $percent [The amout of white to be mixed in]
+ * @return {color}
+ *
+ * @example
+ *   .element {
+ *     background-color: tint(#6ecaa6 , 40%);
+ *   }
+ *
+ *   // CSS Output
+ *   .element {
+ *     background-color: #a8dfc9;
+ *   }
+ */
+
+/* The Color of O2Team Brand */
+
+/* Color */
+
+/* Color Palette */
+
+/* Text Color */
+
+/* Link */
+
+/* 背景色 */
+
+/* 边框颜色 */
+
+/* 图标颜色 */
+
+/* Border Radius */
+
+/* 透明度 */
+
+/* Font */
+
+/* Line Height */
+
+/* 水平间距 */
+
+/* 垂直间距 */
+
+/* 图标尺寸 */
+
+/* z-index */
+
+/* timing function */
+
+/**
+ * CSS cubic-bezier timing functions
+ * http://bourbon.io/docs/#timing-functions
+ */
+
+.at-badge {
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+  vertical-align: middle;
+}
+
+.at-badge__dot {
+  position: absolute;
+  right: -0.128rem;
+  top: -0.128rem;
+  width: 0.42667rem;
+  height: 0.42667rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #FF4949;
+  box-shadow: 0 0.08533rem 0.17067rem 0 rgba(233, 59, 61, 0.2);
+}
+
+.at-badge__num {
+  font-size: 0.42667rem;
+  color: #fff;
+  height: 0.59733rem;
+  line-height: 0.59733rem;
+  position: absolute;
+  right: -6PX;
+  top: -0.29867rem;
+  -webkit-transform: translate(50%, 0);
+          transform: translate(50%, 0);
+  padding: 0 0.21333rem;
+  border-radius: 0.29867rem 0.29867rem 0.29867rem 0;
+  overflow: hidden;
+  background: #FF4949;
+  box-shadow: 0 0.08533rem 0.17067rem 0 rgba(233, 59, 61, 0.2);
+  z-index: 1;
+}
+
+
+@charset "UTF-8";
+
+/**
  * Mixins
  */
 
@@ -323,125 +424,74 @@
  * http://bourbon.io/docs/#timing-functions
  */
 
-.at-tabs {
-  overflow: hidden;
+.at-tab-bar {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  min-height: 1.06667rem;
+  padding: 0.256rem 0 0.128rem;
+  text-align: center;
+  box-sizing: border-box;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: start;
+          align-items: start;
+  background-color: #FFF;
+  border-top: 1PX #e2ecf4 solid;
 }
 
-.at-tabs__item {
-  position: relative;
+.at-tab-bar__item {
   -webkit-flex: 1;
           flex: 1;
-  padding: 0.512rem 0.512rem;
-  font-size: 0.59733rem;
+  padding: 0.256rem 0.256rem 0;
   color: #333;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  font-size: 0.42667rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
-.at-tabs__item::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 1PX;
-  background-color: #6190E8;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transition: all 0.15s;
-  transition: all 0.15s;
-}
-
-.at-tabs__item--active {
-  color: #6190E8;
-}
-
-.at-tabs__item--active::after {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
-
-.at-tabs__header {
-  position: relative;
-  display: -webkit-flex;
-  display: flex;
-  width: 100%;
-  box-sizing: border-box;
-  text-align: center;
-  white-space: nowrap;
-  background-color: #FFF;
-  overflow: -moz-scrollbars-none;
-}
-
-.at-tabs__header--scroll {
-  overflow-x: scroll;
-  -webkit-overflow-scrolling: touch;
-  white-space: nowrap;
-}
-
-.at-tabs__header--scroll .at-tabs__item {
-  display: inline-block;
-  overflow: visible;
-}
-
-.at-tabs__header::-webkit-scrollbar {
-  height: 0 !important;
-  width: 0 !important;
-}
-
-.at-tabs__body {
+.at-tab-bar__title {
   display: block;
-  font-size: 0;
+  padding: 0.128rem 0;
+  max-width: 4.26667rem;
+  font-size: 0.42667rem;
+  line-height: 1;
   white-space: nowrap;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-
-.tabs-pane {
-  display: inline-block;
-  width: 100%;
-  white-space: initial;
-  vertical-align: top;
-}
-
-
-.doc-header {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-          align-items: center;
-  padding: 1.28rem;
-  height: 3.84rem;
-}
-
-.doc-header__title {
-  position: relative;
-  height: 1.92rem;
-  color: #333;
-  font-size: 0.85333rem;
-  font-weight: bold;
-}
-
-.doc-header__title::after {
-  content: '';
-  position: absolute;
-  left: 0;
+.at-tab-bar--fixed {
+  position: fixed;
   bottom: 0;
-  display: inline-block;
-  width: 2.56rem;
-  height: 2PX;
-  border-radius: 1PX;
-  background-color: #6190E8;
+  left: 0;
+  right: 0;
+  z-index: 800;
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.at-tab-bar--ipx.at-tab-bar--fixed {
+  padding-bottom: 1.45067rem;
 }
 
 
-.tab-content {
-  padding: 2.13333rem 1.06667rem;
-  font-size: 0.64rem;
+.example__body {
+  background-color: #f8f8f8;
+  min-height: 2.13333rem;
+  padding: 0.64rem 0.21333rem 1.70667rem;
+}
+
+.example__body .item {
+  margin-bottom: 0.21333rem;
+}
+
+.example__body .tab-content {
+  font-size: 0.53333rem;
+  padding: 0.42667rem;
   text-align: center;
-  background-color: #FAFBFC;
+  border-top: 0.04267rem solid #f8f8f8;
+  background-color: #fff;
 }
 
 

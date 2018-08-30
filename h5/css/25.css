@@ -323,83 +323,108 @@
  * http://bourbon.io/docs/#timing-functions
  */
 
-.at-segmented-control {
-  display: -webkit-inline-flex;
-  display: inline-flex;
-  position: relative;
-  text-align: center;
-  width: 100%;
-  border-radius: 0.17067rem;
-  box-sizing: border-box;
-  white-space: nowrap;
-  overflow: hidden;
-  border-top: 1PX #6190E8 solid;
-  border-bottom: 1PX #6190E8 solid;
-  border-right: 1PX #6190E8 solid;
-  border-left: 1PX #6190E8 solid;
-}
-
-.at-segmented-control__item {
-  -webkit-flex: 1;
-          flex: 1;
-  box-sizing: border-box;
-  padding: 0.128rem 0.21333rem;
-  min-width: 2.56rem;
-  min-height: 0.42667rem;
-  color: #333;
-  font-size: 0.59733rem;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  background-color: #FFF;
-  overflow: hidden;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.at-segmented-control__item + .at-segmented-control__item {
-  border-left: 1PX #6190E8 solid;
-}
-
-.at-segmented-control--disabled {
-  opacity: 0.3;
-}
-
-
-.doc-header {
+.at-nav-bar {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
           align-items: center;
-  padding: 1.28rem;
-  height: 3.84rem;
+  -webkit-justify-content: center;
+          justify-content: center;
+  width: 100%;
+  background-color: #FFF;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+  border-bottom: 1PX #e2ecf4 solid;
 }
 
-.doc-header__title {
-  position: relative;
-  height: 1.92rem;
-  color: #333;
-  font-size: 0.85333rem;
-  font-weight: bold;
-}
-
-.doc-header__title::after {
-  content: '';
-  position: absolute;
+.at-nav-bar--fixed {
+  position: fixed;
+  top: 0;
   left: 0;
-  bottom: 0;
+  right: 0;
+  z-index: 800;
+}
+
+.at-nav-bar__left_view {
+  -webkit-flex: 2;
+          flex: 2;
+  font-size: 18PX;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 100%;
+  padding: 9PX 5PX;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.at-nav-bar__left_view:active {
+  background-color: #F0F0F0;
+}
+
+.at-nav-bar__right_view {
+  -webkit-flex: 2;
+          flex: 2;
+  overflow: hidden;
+  height: 100%;
+  text-align: right;
+}
+
+.at-nav-bar__title {
+  -webkit-flex: 5;
+          flex: 5;
+  color: #333;
+  font-size: 18PX;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.at-nav-bar__text {
   display: inline-block;
-  width: 2.56rem;
-  height: 2PX;
-  border-radius: 1PX;
-  background-color: #6190E8;
+  font-size: 16PX;
+  height: 100%;
+  padding-left: 5PX;
+  vertical-align: middle;
+  line-height: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.at-nav-bar__container {
+  width: 50%;
+  height: 100%;
+  font-size: 18PX;
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 9PX 5PX;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.at-nav-bar__container:active {
+  background-color: #F0F0F0;
+}
+
+.at-nav-bar__container--hide {
+  display: inline-block;
+  visibility: hidden;
 }
 
 
-.tab-content {
-  padding: 2.13333rem 1.06667rem;
-  font-size: 0.64rem;
-  text-align: center;
-  background-color: #FAFBFC;
+.example__body {
+  background-color: #f8f8f8;
+  min-height: 2.13333rem;
+}
+
+.example__body .item {
+  margin-bottom: 0.21333rem;
 }
 
 
