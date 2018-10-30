@@ -1,0 +1,96 @@
+<block>
+    <view class="page swipe-action-page">
+        <docs-header title="SwipeAction 滑动操作" __triggerObserer="{{ _triggerObserer }}"></docs-header>
+        <view class="doc-body">
+            <view class="panel">
+                <view class="panel__title">一般用法</view>
+                <view class="panel__content no-padding">
+                    <view class="example-item example-item--border">
+                        <at-swipe-action bindonclick="handleClick" __triggerObserer="{{ _triggerObserer }}"
+                        options="{{OPTIONS}}" __fn_onClick="{{true}}">
+                            <view class="normal">AtSwipeAction 一般使用场景</view>
+                        </at-swipe-action>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">禁止滑动</view>
+                <view class="panel__content no-padding">
+                    <view class="example-item example-item--border">
+                        <at-swipe-action disabled="{{true}}" __triggerObserer="{{ _triggerObserer }}"
+                        options="{{OPTIONS}}">
+                            <view class="normal">禁止滑动展示</view>
+                        </at-swipe-action>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">自动关闭</view>
+                <view class="panel__content no-padding">
+                    <view class="example-item example-item--border">
+                        <at-swipe-action bindonclick="handleClick" __triggerObserer="{{ _triggerObserer }}"
+                        autoClose="{{true}}" options="{{OPTIONS}}" __fn_onClick="{{true}}">
+                            <view class="normal">点击按钮自动关闭</view>
+                        </at-swipe-action>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">传递点击事件</view>
+                <view class="panel__content no-padding">
+                    <view class="example-item example-item--border">
+                        <at-swipe-action bindonclick="handleClick" __triggerObserer="{{ _triggerObserer }}"
+                        options="{{OPTIONS}}" __fn_onClick="{{true}}">
+                            <view class="normal">点击事件触发</view>
+                        </at-swipe-action>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">开启和关闭事件</view>
+                <view class="panel__content no-padding">
+                    <view class="example-item example-item--border">
+                        <at-swipe-action options="{{OPTIONS}}" __triggerObserer="{{ _triggerObserer }}"
+                        bindonclick="handleClick" bindonopened="handleOpened" bindonclosed="handleClosed"
+                        __fn_onClick="{{true}}" __fn_onOpened="{{true}}" __fn_onClosed="{{true}}">
+                            <view class="normal">开启和关闭时触发事件</view>
+                        </at-swipe-action>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">与List组件使用</view>
+                <view class="panel__content no-padding">
+                    <view class="example-item">
+                        <at-list __triggerObserer="{{ _triggerObserer }}">
+                            <at-swipe-action options="{{OPTIONS}}" __triggerObserer="{{ _triggerObserer }}">
+                                <at-list-item title="Item1" __triggerObserer="{{ _triggerObserer }}"></at-list-item>
+                            </at-swipe-action>
+                            <at-swipe-action options="{{OPTIONS}}" __triggerObserer="{{ _triggerObserer }}">
+                                <at-list-item title="Item2" __triggerObserer="{{ _triggerObserer }}"></at-list-item>
+                            </at-swipe-action>
+                            <at-swipe-action options="{{anonymousState__temp}}" __triggerObserer="{{ _triggerObserer }}">
+                                <at-list-item title="Item3" __triggerObserer="{{ _triggerObserer }}"></at-list-item>
+                            </at-swipe-action>
+                        </at-list>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">控制只显示单个</view>
+                <view class="panel__content no-padding">
+                    <view class="example-item">
+                        <at-list __triggerObserer="{{ _triggerObserer }}">
+                            <at-swipe-action wx:key="{{index}}" __triggerObserer="{{ _triggerObserer }}"
+                            bindonopened="handleSingle" isClose="{{item.isClose}}" options="{{item.options}}"
+                            wx:for="{{list}}" wx:for-item="item" wx:for-index="index" __fn_onOpened="{{true}}"
+                            data-e-handleSingle-so="this" data-e-handleSingle-a-a="{{index}}">
+                                <at-list-item title="{{item.title}}" __triggerObserer="{{ _triggerObserer }}"></at-list-item>
+                            </at-swipe-action>
+                        </at-list>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

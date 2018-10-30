@@ -1,0 +1,54 @@
+<block>
+    <view class="page">
+        <docs-header title="NavBar 导航栏" __triggerObserer="{{ _triggerObserer }}"></docs-header>
+        <view class="doc-body">
+            <view class="panel">
+                <view class="panel__title">基础用法</view>
+                <view class="panel__content no-padding">
+                    <view class="example-item">
+                        <at-nav-bar bindonclicklefticon="handleClick" __triggerObserer="{{ _triggerObserer }}"
+                        title="NavBar 导航栏示例" leftIconType="chevron-left" __fn_onClickLeftIcon="{{true}}"
+                        data-e-handleClick-so="this" data-e-handleClick-a-a="返回"></at-nav-bar>
+                    </view>
+                    <view class="example-item">
+                        <at-nav-bar bindonclicklefticon="handleClick" __triggerObserer="{{ _triggerObserer }}"
+                        title="NavBar 导航栏示例" leftIconType="chevron-left" rightFirstIconType="bullet-list"
+                        rightSecondIconType="user" __fn_onClickLeftIcon="{{true}}" data-e-handleClick-so="this"
+                        data-e-handleClick-a-a="返回"></at-nav-bar>
+                    </view>
+                    <view class="example-item">
+                        <at-nav-bar bindonclicklefticon="handleClick" __triggerObserer="{{ _triggerObserer }}"
+                        title="NavBar 导航栏示例" leftIconType="chevron-left" rightFirstIconType="user"
+                        __fn_onClickLeftIcon="{{true}}" data-e-handleClick-so="this" data-e-handleClick-a-a="返回"></at-nav-bar>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">自定义左上角文案</view>
+                <view class="panel__content no-padding">
+                    <view class="example-item">
+                        <at-nav-bar bindonclicklefticon="handleClick" __triggerObserer="{{ _triggerObserer }}"
+                        title="NavBar 导航栏示例" leftText="返回" leftIconType="chevron-left" rightFirstIconType="bullet-list"
+                        rightSecondIconType="user" __fn_onClickLeftIcon="{{true}}" data-e-handleClick-so="this"
+                        data-e-handleClick-a-a="返回"></at-nav-bar>
+                    </view>
+                    <view class="example-item">
+                        <at-nav-bar bindonclicklefticon="handleClick" __triggerObserer="{{ _triggerObserer }}"
+                        title="NavBar 导航栏示例" leftText="返回" rightFirstIconType="bullet-list" rightSecondIconType="user"
+                        __fn_onClickLeftIcon="{{true}}" data-e-handleClick-so="this" data-e-handleClick-a-a="返回"></at-nav-bar>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">自定义颜色</view>
+                <view class="panel__content no-padding">
+                    <at-nav-bar bindonclickrgiconst="clickList" __triggerObserer="{{ _triggerObserer }}"
+                    bindonclickrgiconnd="clickMy" bindonclicklefticon="clickReturn" color="#333"
+                    title="NavBar 导航栏示例" leftText="返回" rightFirstIconType="bullet-list" rightSecondIconType="user"
+                    __fn_onClickRgIconSt="{{true}}" data-e-clickList-so="this" __fn_onClickRgIconNd="{{true}}"
+                    data-e-clickMy-so="this" __fn_onClickLeftIcon="{{true}}" data-e-clickReturn-so="this"></at-nav-bar>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

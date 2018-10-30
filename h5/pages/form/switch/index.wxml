@@ -1,0 +1,33 @@
+<block>
+    <view class="page">
+        <docs-header title="Switch 开关" __triggerObserer="{{ _triggerObserer }}"></docs-header>
+        <view class="doc-body">
+            <view class="panel">
+                <view class="panel__title">基础用法</view>
+                <view class="panel__content no-padding">
+                    <view class="example-item">
+                        <at-form __triggerObserer="{{ _triggerObserer }}">
+                            <at-switch title="开启中" __triggerObserer="{{ _triggerObserer }}" checked="{{true}}"
+                            bindonchange="handleChange" __fn_onChange="{{true}}" data-e-handleChange-so="this"></at-switch>
+                            <at-switch title="已关闭" __triggerObserer="{{ _triggerObserer }}"
+                            border="{{false}}"></at-switch>
+                        </at-form>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">禁用状态</view>
+                <view class="panel__content no-padding">
+                    <view class="example-item">
+                        <at-form __triggerObserer="{{ _triggerObserer }}">
+                            <at-switch title="不可点击" __triggerObserer="{{ _triggerObserer }}" checked="{{true}}"
+                            disabled="{{true}}"></at-switch>
+                            <at-switch title="不可点击" __triggerObserer="{{ _triggerObserer }}"
+                            border="{{false}}" disabled="{{true}}"></at-switch>
+                        </at-form>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

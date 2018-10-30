@@ -1,0 +1,20 @@
+<block>
+    <view class="{{anonymousState__temp}}" style="{{anonymousState__temp2}}">
+        <view class="at-nav-bar__left_view" bindtap="handleClickLeftView" style="{{anonymousState__temp3}}"
+        data-e-handleClickLeftView-so="this">
+            <at-icon value="{{leftIconType}}" __triggerObserer="{{ _triggerObserer }}"></at-icon>
+            <text class="at-nav-bar__text">{{leftText}}</text>
+        </view>
+        <view class="at-nav-bar__title">{{title}}</view>
+        <view class="at-nav-bar__right_view">
+            <view class="{{anonymousState__temp4}}" style="{{anonymousState__temp5}}"
+            bindtap="handleClickNd" data-e-handleClickNd-so="this">
+                <at-icon value="{{rightSecondIconType}}" __triggerObserer="{{ _triggerObserer }}"></at-icon>
+            </view>
+            <view class="{{anonymousState__temp6}}" style="{{anonymousState__temp7}}"
+            bindtap="handleClickSt" data-e-handleClickSt-so="this">
+                <at-icon value="{{rightFirstIconType}}" __triggerObserer="{{ _triggerObserer }}"></at-icon>
+            </view>
+        </view>
+    </view>
+</block>

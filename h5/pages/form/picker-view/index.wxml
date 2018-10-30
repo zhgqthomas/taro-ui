@@ -1,0 +1,41 @@
+<block>
+    <view class="page">
+        <docs-header title="Picker View 滚动选择器" __triggerObserer="{{ _triggerObserer }}"></docs-header>
+        <view class="doc-body">
+            <view class="panel">
+                <view class="panel__title">基础用法</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <view class="example-item__desc">嵌入页面的滑动选择器</view>
+                        <block>
+                            <block wx:if="{{isWeapp}}">
+                                <view>
+                                    <view class="title-date">{{year}}年{{month}}月{{day}}日</view>
+                                    <picker-view indicator-style="height: 50px;"
+                                    class="picker" style="width: 100%; height: 300px; text-align: center;"
+                                    value="{{value}}" bindchange="handleChange">
+                                        <picker-view-column>
+                                            <view wx:key="{{idx}}" style="line-height: 50px" wx:for="{{years}}" wx:for-item="item"
+                                            wx:for-index="idx">{{item}}年</view>
+                                        </picker-view-column>
+                                        <picker-view-column>
+                                            <view wx:key="{{idx}}" style="line-height: 50px" wx:for="{{months}}" wx:for-item="item"
+                                            wx:for-index="idx">{{item}}月</view>
+                                        </picker-view-column>
+                                        <picker-view-column>
+                                            <view wx:key="{{idx}}" style="line-height: 50px" wx:for="{{days}}" wx:for-item="item"
+                                            wx:for-index="idx">{{item}}日</view>
+                                        </picker-view-column>
+                                    </picker-view>
+                                </view>
+                            </block>
+                            <block wx:else>
+                                <view class="title-date">暂不支持 H5 端</view>
+                            </block>
+                        </block>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

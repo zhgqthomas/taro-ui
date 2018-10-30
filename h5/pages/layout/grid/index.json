@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "docs-header": "../../components/doc-header/index",
+    "at-grid": "../../../components/grid/index"
+  },
+  "navigationBarTitleText": "Taro UI"
+}

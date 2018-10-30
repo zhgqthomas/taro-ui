@@ -1,0 +1,15 @@
+
+.tab-content {
+  padding: 100rpx 50rpx;
+  font-size: 30rpx;
+  text-align: center;
+  background-color: #FAFBFC; }
+
+.tab-content--vertical {
+  height: 200PX;
+  padding: 100PX 50rpx;
+  font-size: 30rpx;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #FAFBFC; }

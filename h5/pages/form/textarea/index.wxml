@@ -1,0 +1,47 @@
+<block>
+    <view class="page">
+        <docs-header title="Textarea 多行文本框" __triggerObserer="{{ _triggerObserer }}"></docs-header>
+        <view class="doc-body">
+            <view class="panel">
+                <view class="panel__title">基础</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-textarea value="{{value1}}" __triggerObserer="{{ _triggerObserer }}"
+                        bindonchange="handleChange" maxlength="200" placeholder="你的问题是..." __fn_onChange="{{true}}"
+                        data-e-handleChange-so="this" data-e-handleChange-a-a="value1"></at-textarea>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">不显示字数</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-textarea count="{{false}}" __triggerObserer="{{ _triggerObserer }}"
+                        value="{{value2}}" bindonchange="handleChange" maxlength="200" placeholder="你的问题是..."
+                        __fn_onChange="{{true}}" data-e-handleChange-so="this" data-e-handleChange-a-a="value2"></at-textarea>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">文字超出仍可输入</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-textarea textOverflowForbidden="{{false}}" __triggerObserer="{{ _triggerObserer }}"
+                        value="{{value3}}" bindonchange="handleChange" maxlength="200" placeholder="你的问题是..."
+                        __fn_onChange="{{true}}" data-e-handleChange-so="this" data-e-handleChange-a-a="value3"></at-textarea>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">自定义高度</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-textarea height="300" __triggerObserer="{{ _triggerObserer }}" value="{{value4}}"
+                        bindonchange="handleChange" maxlength="200" placeholder="你的问题是..." __fn_onChange="{{true}}"
+                        data-e-handleChange-so="this" data-e-handleChange-a-a="value4"></at-textarea>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

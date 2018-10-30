@@ -1,0 +1,24 @@
+<block>
+    <view class="page page-index">
+        <view class="logo">
+            <image src="{{logoImg}}" class="img" mode="widthFix" />
+        </view>
+        <view class="page-title">Taro UI</view>
+        <view class="module-list">
+            <view class="module-list__item" wx:key="{{index}}" data-id="{{item.id}}"
+            data-name="{{item.title}}" data-list="{{item.subpages}}" bindtap="gotoPanel"
+            wx:for="{{list}}" wx:for-item="item" wx:for-index="index">
+                <view class="module-list__icon">
+                    <image src="{{item.icon}}" class="img" mode="widthFix" />
+                </view>
+                <view class="module-list__info">
+                    <view class="title">{{item.title}}</view>
+                    <view class="content">{{item.content}}</view>
+                </view>
+                <view class="module-list__arrow">
+                    <text class="at-icon at-icon-chevron-right"></text>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

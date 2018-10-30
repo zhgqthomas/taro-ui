@@ -1,0 +1,59 @@
+<block>
+    <view class="page activity-indicator-page">
+        <docs-header title="Activity Indicator 活动指示器" __triggerObserer="{{ _triggerObserer }}"></docs-header>
+        <view class="doc-body">
+            <view class="panel">
+                <view class="panel__title">自定义尺寸</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <view class="subitem">
+                            <at-activity-indicator size="{{20}}" __triggerObserer="{{ _triggerObserer }}"></at-activity-indicator>
+                        </view>
+                        <view class="subitem">
+                            <at-activity-indicator size="{{24}}" __triggerObserer="{{ _triggerObserer }}"></at-activity-indicator>
+                        </view>
+                        <view class="subitem">
+                            <at-activity-indicator size="{{32}}" __triggerObserer="{{ _triggerObserer }}"></at-activity-indicator>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">自定义颜色</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <view class="subitem">
+                            <at-activity-indicator color="#13CE66" __triggerObserer="{{ _triggerObserer }}"></at-activity-indicator>
+                        </view>
+                        <view class="subitem">
+                            <at-activity-indicator color="#FF4949" __triggerObserer="{{ _triggerObserer }}"></at-activity-indicator>
+                        </view>
+                        <view class="subitem">
+                            <at-activity-indicator color="#C9C9C9" __triggerObserer="{{ _triggerObserer }}"></at-activity-indicator>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">自定义文字</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-activity-indicator content="加载中..." __triggerObserer="{{ _triggerObserer }}"></at-activity-indicator>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">垂直水平居中</view>
+                <view class="panel__content">
+                    <view class="example-item example-item--center">
+                        <at-activity-indicator mode="center" __triggerObserer="{{ _triggerObserer }}"></at-activity-indicator>
+                    </view>
+                    <view class="example-item example-item--center">
+                        <at-activity-indicator mode="center" __triggerObserer="{{ _triggerObserer }}"
+                        content="Loading..."></at-activity-indicator>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

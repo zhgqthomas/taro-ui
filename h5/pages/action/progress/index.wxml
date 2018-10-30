@@ -1,0 +1,114 @@
+<block>
+    <view class="page progress-page">
+        <docs-header title="Progress 进度条" __triggerObserer="{{ _triggerObserer }}"></docs-header>
+        <view class="doc-body">
+            <view class="panel">
+                <view class="panel__title">基础进度条</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-progress percent="{{25}}" __triggerObserer="{{ _triggerObserer }}"></at-progress>
+                    </view>
+                    <view class="example-item">
+                        <at-progress percent="{{50}}" __triggerObserer="{{ _triggerObserer }}"></at-progress>
+                    </view>
+                    <view class="example-item">
+                        <at-progress percent="{{75}}" __triggerObserer="{{ _triggerObserer }}"></at-progress>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">隐藏进度文案</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-progress percent="{{25}}" __triggerObserer="{{ _triggerObserer }}"
+                        isHidePercent="{{true}}"></at-progress>
+                    </view>
+                    <view class="example-item">
+                        <at-progress percent="{{75}}" __triggerObserer="{{ _triggerObserer }}"
+                        isHidePercent="{{true}}"></at-progress>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">自定义进度条线宽</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-progress percent="{{25}}" __triggerObserer="{{ _triggerObserer }}"
+                        strokeWidth="{{6}}"></at-progress>
+                    </view>
+                    <view class="example-item">
+                        <at-progress percent="{{50}}" __triggerObserer="{{ _triggerObserer }}"
+                        strokeWidth="{{8}}"></at-progress>
+                    </view>
+                    <view class="example-item">
+                        <at-progress percent="{{75}}" __triggerObserer="{{ _triggerObserer }}"
+                        strokeWidth="{{10}}"></at-progress>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">自定义颜色</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-progress percent="{{25}}" __triggerObserer="{{ _triggerObserer }}"
+                        color="#FF4949"></at-progress>
+                    </view>
+                    <view class="example-item">
+                        <at-progress percent="{{50}}" __triggerObserer="{{ _triggerObserer }}"
+                        color="#13CE66"></at-progress>
+                    </view>
+                    <view class="example-item">
+                        <at-progress percent="{{75}}" __triggerObserer="{{ _triggerObserer }}"
+                        color="#FFC82C"></at-progress>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">不同的状态</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <view class="example-item__desc">暂停</view>
+                        <at-progress percent="{{25}}" __triggerObserer="{{ _triggerObserer }}"></at-progress>
+                    </view>
+                    <view class="example-item">
+                        <view class="example-item__desc">进行中</view>
+                        <at-progress percent="{{50}}" __triggerObserer="{{ _triggerObserer }}"
+                        status="progress"></at-progress>
+                    </view>
+                    <view class="example-item">
+                        <view class="example-item__desc">错误</view>
+                        <at-progress percent="{{75}}" __triggerObserer="{{ _triggerObserer }}"
+                        status="error"></at-progress>
+                    </view>
+                    <view class="example-item">
+                        <view class="example-item__desc">已完成</view>
+                        <at-progress percent="{{100}}" __triggerObserer="{{ _triggerObserer }}"
+                        status="success"></at-progress>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">实际案例</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-progress percent="{{percent}}" __triggerObserer="{{ _triggerObserer }}"></at-progress>
+                        <view class="example-item__buttons">
+                            <view class="btn">
+                                <at-button size="small" __triggerObserer="{{ _triggerObserer }}" bindonclick="reduce"
+                                __fn_onClick="{{true}}">
+                                    <at-icon value="subtract" __triggerObserer="{{ _triggerObserer }}" size="{{12}}"></at-icon>
+                                </at-button>
+                            </view>
+                            <view class="btn">
+                                <at-button size="small" __triggerObserer="{{ _triggerObserer }}" bindonclick="increase"
+                                __fn_onClick="{{true}}">
+                                    <at-icon value="add" __triggerObserer="{{ _triggerObserer }}" size="{{12}}"></at-icon>
+                                </at-button>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

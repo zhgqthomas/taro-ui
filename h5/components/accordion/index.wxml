@@ -1,0 +1,17 @@
+<block>
+    <view class="{{anonymousState__temp}}" style="{{anonymousState__temp2}}">
+        <view class="at-accordion__header" bindtap="handleClick" data-e-handleClick-so="this">
+            <block wx:if="{{icon}}">
+                <at-icon customStyle="{{anonymousState__temp3}}" __triggerObserer="{{ _triggerObserer }}"
+                className="at-accordion__icon" value="{{icon.value}}" color="{{icon.color}}"
+                size="{{icon.size}}"></at-icon>
+            </block>
+            <view class="at-accordion__title">{{title}}</view>
+            <at-icon customStyle="{{animatedStyle}}" __triggerObserer="{{ _triggerObserer }}"
+            value="chevron-down" color="#c7c7cc"></at-icon>
+        </view>
+        <view class="{{anonymousState__temp4}}" style="{{anonymousState__temp5}}">
+            <slot></slot>
+        </view>
+    </view>
+</block>

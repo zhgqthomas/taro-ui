@@ -1,0 +1,58 @@
+<block>
+    <view class="page">
+        <docs-header title="Rate 评分" __triggerObserer="{{ _triggerObserer }}"></docs-header>
+        <view class="doc-body">
+            <view class="panel">
+                <view class="panel__title">基础用法</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-rate value="{{rateValue1}}" __triggerObserer="{{ _triggerObserer }}"
+                        bindonchange="handleRateChange" __fn_onChange="{{true}}" data-e-handleRateChange-so="this"
+                        data-e-handleRateChange-a-a="rateValue1"></at-rate>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">自定义尺寸</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-rate size="16" __triggerObserer="{{ _triggerObserer }}" value="{{rateValue2}}"
+                        bindonchange="handleRateChange" __fn_onChange="{{true}}" data-e-handleRateChange-so="this"
+                        data-e-handleRateChange-a-a="rateValue2"></at-rate>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">自定义评分数</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-rate max="{{10}}" __triggerObserer="{{ _triggerObserer }}" value="{{rateValue3}}"
+                        bindonchange="handleRateChange" __fn_onChange="{{true}}" data-e-handleRateChange-so="this"
+                        data-e-handleRateChange-a-a="rateValue3"></at-rate>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">自定义星星间隔</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-rate margin="{{15}}" __triggerObserer="{{ _triggerObserer }}" value="{{rateValue4}}"
+                        bindonchange="handleRateChange" __fn_onChange="{{true}}" data-e-handleRateChange-so="this"
+                        data-e-handleRateChange-a-a="rateValue4"></at-rate>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">只读</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <view>评分: 3.5</view>
+                        <view>
+                            <at-rate value="{{3.5}}" __triggerObserer="{{ _triggerObserer }}"></at-rate>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

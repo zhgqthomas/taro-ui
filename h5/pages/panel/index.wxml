@@ -1,0 +1,27 @@
+<block>
+    <view class="page">
+        <view class="panel-header">
+            <view class="panel-header__icon">
+                <block>
+                    <block wx:if="{{icon}}">
+                        <image src="{{icon}}" class="img" mode="widthFix" />
+                    </block>
+                    <block wx:else>
+                        <text class="at-icon at-icon-list"></text>
+                    </block>
+                </block>
+            </view>
+            <view class="panel-header__title">{{title}}</view>
+        </view>
+        <view class="panel-body">
+            <view class="component-list">
+                <view class="component-list__item" wx:key="{{item.id}}" data-id="{{item.id}}"
+                data-parent="{{currentId}}" bindtap="gotoComponent" wx:for="{{itemList}}"
+                wx:for-item="item">
+                    <text class="name">{{item.id + ' ' + item.name}}</text>
+                    <text class="at-icon at-icon-chevron-right"></text>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

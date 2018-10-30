@@ -1,0 +1,8 @@
+<block>
+    <view class="{{anonymousState__temp}}" style="{{anonymousState__temp2}}">
+        <view class="at-segmented-control__item" style="{{value.$loopState__temp4}}"
+        wx:key="{{value.$original}}" bindtap="handleClick" wx:for="{{loopArray0}}"
+        wx:for-item="value" wx:for-index="i" data-e-handleClick-so="this" data-e-handleClick-a-a="{{i}}"
+        data-e-handleClick-a-b="{{disabled}}">{{value.$original}}</view>
+    </view>
+</block>

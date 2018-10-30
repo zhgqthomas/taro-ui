@@ -1,0 +1,100 @@
+<block>
+    <view class="page">
+        <docs-header title="Avatar 头像" __triggerObserer="{{ _triggerObserer }}"></docs-header>
+        <view class="doc-body">
+            <view class="panel">
+                <view class="panel__title">圆形头像</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <view class="subitem">
+                            <at-avatar circle="{{true}}" __triggerObserer="{{ _triggerObserer }}"
+                            size="small" image="{{avatarImg}}"></at-avatar>
+                        </view>
+                        <view class="subitem">
+                            <at-avatar circle="{{true}}" __triggerObserer="{{ _triggerObserer }}"
+                            image="{{avatarImg}}"></at-avatar>
+                        </view>
+                        <view class="subitem">
+                            <at-avatar circle="{{true}}" __triggerObserer="{{ _triggerObserer }}"
+                            size="large" image="{{avatarImg}}"></at-avatar>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">圆角矩形头像</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <view class="subitem">
+                            <at-avatar size="small" __triggerObserer="{{ _triggerObserer }}" image="{{avatarImg}}"></at-avatar>
+                        </view>
+                        <view class="subitem">
+                            <at-avatar image="{{avatarImg}}" __triggerObserer="{{ _triggerObserer }}"></at-avatar>
+                        </view>
+                        <view class="subitem">
+                            <at-avatar size="large" __triggerObserer="{{ _triggerObserer }}" image="{{avatarImg}}"></at-avatar>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">圆形头像（支持文本）</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <view class="subitem">
+                            <at-avatar circle="{{true}}" __triggerObserer="{{ _triggerObserer }}"
+                            size="small" text="凹"></at-avatar>
+                        </view>
+                        <view class="subitem">
+                            <at-avatar circle="{{true}}" __triggerObserer="{{ _triggerObserer }}"
+                            text="凹"></at-avatar>
+                        </view>
+                        <view class="subitem">
+                            <at-avatar circle="{{true}}" __triggerObserer="{{ _triggerObserer }}"
+                            size="large" text="凹"></at-avatar>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">圆角矩形头像（支持文本）</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <view class="subitem">
+                            <at-avatar size="small" __triggerObserer="{{ _triggerObserer }}" text="凹"></at-avatar>
+                        </view>
+                        <view class="subitem">
+                            <at-avatar text="凹" __triggerObserer="{{ _triggerObserer }}"></at-avatar>
+                        </view>
+                        <view class="subitem">
+                            <at-avatar size="large" __triggerObserer="{{ _triggerObserer }}" text="凹"></at-avatar>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <block wx:if="{{anonymousState__temp5}}">
+                <view class="panel">
+                    <view class="panel__title">openData 头像（仅小程序支持）</view>
+                    <view class="panel__content">
+                        <view class="example-item">
+                            <view class="subitem">
+                                <at-avatar openData="{{anonymousState__temp}}" __triggerObserer="{{ _triggerObserer }}"
+                                size="small"></at-avatar>
+                            </view>
+                            <view class="subitem">
+                                <at-avatar openData="{{anonymousState__temp2}}" __triggerObserer="{{ _triggerObserer }}"></at-avatar>
+                            </view>
+                            <view class="subitem">
+                                <at-avatar size="large" __triggerObserer="{{ _triggerObserer }}" openData="{{anonymousState__temp3}}"></at-avatar>
+                            </view>
+                            <view class="subitem">
+                                <at-avatar size="large" __triggerObserer="{{ _triggerObserer }}" circle="{{true}}"
+                                openData="{{anonymousState__temp4}}"></at-avatar>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </view>
+</block>

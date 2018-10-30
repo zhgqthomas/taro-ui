@@ -1,0 +1,43 @@
+<block>
+    <view class="page">
+        <docs-header title="Checkbox 复选框" __triggerObserer="{{ _triggerObserer }}"></docs-header>
+        <view class="doc-body">
+            <view class="panel">
+                <view class="panel__title">基础用法</view>
+                <view class="panel__content no-padding">
+                    <view class="example-item">
+                        <view class="checkbox-container">
+                            <at-checkbox options="{{checkboxOption1}}" __triggerObserer="{{ _triggerObserer }}"
+                            selectedList="{{checkedList1}}" bindonchange="handleChange" __fn_onChange="{{true}}"
+                            data-e-handleChange-so="this"></at-checkbox>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">含描述信息</view>
+                <view class="panel__content no-padding">
+                    <view class="example-item">
+                        <view class="checkbox-container">
+                            <at-checkbox options="{{checkboxOption2}}" __triggerObserer="{{ _triggerObserer }}"
+                            selectedList="{{checkedList2}}" bindonchange="handleChangeSnd" __fn_onChange="{{true}}"
+                            data-e-handleChangeSnd-so="this"></at-checkbox>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">选项禁用</view>
+                <view class="panel__content no-padding">
+                    <view class="example-item">
+                        <view class="checkbox-container">
+                            <at-checkbox options="{{checkboxOption3}}" __triggerObserer="{{ _triggerObserer }}"
+                            selectedList="{{checkedList3}}" bindonchange="handleChangeThd" __fn_onChange="{{true}}"
+                            data-e-handleChangeThd-so="this"></at-checkbox>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

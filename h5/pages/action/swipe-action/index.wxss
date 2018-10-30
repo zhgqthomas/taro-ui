@@ -1,0 +1,9 @@
+
+.swipe-action-page .normal {
+  padding: 0 24rpx;
+  line-height: 88rpx; }
+
+.swipe-action-page .example-item--border {
+  border: 1PX solid #e2ecf4;
+  border-left: none;
+  border-right: none; }

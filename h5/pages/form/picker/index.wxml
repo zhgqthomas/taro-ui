@@ -1,0 +1,57 @@
+<block>
+    <view class="page">
+        <docs-header title="Picker 选择器" __triggerObserer="{{ _triggerObserer }}"></docs-header>
+        <view class="doc-body">
+            <view class="panel">
+                <view class="panel__title">普通选择器</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-list __triggerObserer="{{ _triggerObserer }}">
+                            <picker mode="selector" range="{{selector}}" value="{{selectorValue}}"
+                            bindchange="handleChange">
+                                <at-list-item title="国家地区" __triggerObserer="{{ _triggerObserer }}" extraText="{{selector[selectorValue]}}"></at-list-item>
+                            </picker>
+                        </at-list>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">多列选择器</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-list __triggerObserer="{{ _triggerObserer }}">
+                            <picker mode="multiSelector" range="{{multiSelector}}" value="{{mulitSelectorValues}}"
+                            bindchange="handleMulitChange">
+                                <at-list-item title="请选择早餐" __triggerObserer="{{ _triggerObserer }}" extraText="{{multiSelector[0][mulitSelectorValues[0]] + ' & ' + multiSelector[1][mulitSelectorValues[1]]}}"></at-list-item>
+                            </picker>
+                        </at-list>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">时间选择器</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-list __triggerObserer="{{ _triggerObserer }}">
+                            <picker mode="time" value="{{timeSel}}" bindchange="handleTimeChange">
+                                <at-list-item title="请选择时间" __triggerObserer="{{ _triggerObserer }}" extraText="{{timeSel}}"></at-list-item>
+                            </picker>
+                        </at-list>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">日期选择器</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-list __triggerObserer="{{ _triggerObserer }}">
+                            <picker mode="date" value="{{dateSel}}" bindchange="handleDateChange">
+                                <at-list-item title="请选择日期" __triggerObserer="{{ _triggerObserer }}" extraText="{{dateSel}}"></at-list-item>
+                            </picker>
+                        </at-list>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

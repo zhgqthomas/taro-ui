@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "docs-header": "../../components/doc-header/index",
+    "at-segmented-control": "../../../components/segmented-control/index"
+  },
+  "navigationBarTitleText": "Taro UI"
+}

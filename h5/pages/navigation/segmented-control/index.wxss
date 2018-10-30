@@ -1,0 +1,6 @@
+
+.tab-content {
+  padding: 100rpx 50rpx;
+  font-size: 30rpx;
+  text-align: center;
+  background-color: #FAFBFC; }

@@ -1,0 +1,36 @@
+<block>
+    <view class="{{anonymousState__temp}}" style="{{anonymousState__temp2}}">
+        <view class="at-pagination__operate">
+            <view class="at-pagination__btns">
+                <view class="at-pagination__btns-prev">
+                    <block wx:if="{{icon}}">
+                        <at-button bindonclick="onPrev" __triggerObserer="{{ _triggerObserer }}"
+                        size="small" disabled="{{prevDisabled}}" __fn_onClick="{{true}}" data-e-onPrev-so="this">
+                            <at-icon value="chevron-left" __triggerObserer="{{ _triggerObserer }}"
+                            color="#000" size="20"></at-icon>
+                        </at-button>
+                    </block>
+                    <block wx:if="{{!icon}}">
+                        <at-button bindonclick="onPrev" __triggerObserer="{{ _triggerObserer }}"
+                        size="small" disabled="{{prevDisabled}}" __fn_onClick="{{true}}" data-e-onPrev-so="this">上一页</at-button>
+                    </block>
+                </view>
+                <view class="at-pagination__btns-next">
+                    <block wx:if="{{icon}}">
+                        <at-button bindonclick="onNext" __triggerObserer="{{ _triggerObserer }}"
+                        size="small" disabled="{{nextDisabled}}" __fn_onClick="{{true}}" data-e-onNext-so="this">
+                            <at-icon value="chevron-right" __triggerObserer="{{ _triggerObserer }}"
+                            color="#000" size="20"></at-icon>
+                        </at-button>
+                    </block>
+                    <block wx:if="{{!icon}}">
+                        <at-button bindonclick="onNext" __triggerObserer="{{ _triggerObserer }}"
+                        size="small" disabled="{{nextDisabled}}" __fn_onClick="{{true}}" data-e-onNext-so="this">下一页</at-button>
+                    </block>
+                </view>
+            </view>
+        </view>
+        <view class="at-pagination__number">
+            <text class="at-pagination__number-current">{{current}}</text>/{{maxPage}}</view>
+    </view>
+</block>

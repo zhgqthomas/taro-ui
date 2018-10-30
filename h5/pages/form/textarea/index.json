@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "docs-header": "../../components/doc-header/index",
+    "at-textarea": "../../../components/textarea/index"
+  },
+  "navigationBarTitleText": "Taro UI"
+}

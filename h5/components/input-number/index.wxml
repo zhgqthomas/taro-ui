@@ -1,0 +1,15 @@
+<block>
+    <view class="{{anonymousState__temp}}" style="{{anonymousState__temp2}}">
+        <view class="{{value <= min || disabled ? 'at-input-number__btn at-input-number--disabled' : 'at-input-number__btn'}}"
+        bindtap="handleMinus" data-e-handleMinus-so="this">
+            <at-icon value="subtract" __triggerObserer="{{ _triggerObserer }}" size="18"></at-icon>
+        </view>
+        <input class="at-input-number__input" style="{{anonymousState__temp3}}"
+        type="digit" value="{{value}}" disabled="{{disabled}}" bindinput="handleInput"
+        data-e-handleInput-so="this" />
+        <view class="{{value >= max || disabled ? 'at-input-number__btn at-input-number--disabled' : 'at-input-number__btn'}}"
+        bindtap="handlePlus" data-e-handlePlus-so="this">
+            <at-icon value="add" __triggerObserer="{{ _triggerObserer }}" size="18"></at-icon>
+        </view>
+    </view>
+</block>

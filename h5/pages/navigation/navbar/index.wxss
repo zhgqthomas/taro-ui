@@ -1,0 +1,6 @@
+
+.example__body {
+  background-color: #f8f8f8;
+  min-height: 100rpx; }
+  .example__body .item {
+    margin-bottom: 10rpx; }

@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "docs-header": "../../components/doc-header/index",
+    "at-button": "../../../components/button/index",
+    "at-modal": "../../../components/modal/index",
+    "at-modal-header": "../../../components/modal/header/index",
+    "at-modal-content": "../../../components/modal/content/index",
+    "at-modal-action": "../../../components/modal/action/index"
+  },
+  "navigationBarTitleText": "Taro UI"
+}

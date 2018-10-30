@@ -1,0 +1,29 @@
+
+.at-rate {
+  line-height: 0;
+  font-size: 0; }
+  .at-rate__left {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    color: transparent;
+    overflow: hidden;
+    z-index: 10; }
+  .at-rate__icon {
+    position: relative;
+    line-height: 0;
+    font-size: 0;
+    display: inline-block;
+    color: #ececec;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s; }
+    .at-rate__icon--on {
+      color: #ffca3e; }
+    .at-rate__icon--off {
+      color: #ececec; }
+    .at-rate__icon--half .at-rate__left {
+      color: #ffca3e; }

@@ -1,0 +1,102 @@
+<block>
+    <view class="page">
+        <docs-header title="NoticeBar 通告栏" __triggerObserer="{{ _triggerObserer }}"></docs-header>
+        <view class="doc-body">
+            <view class="panel">
+                <view class="panel__title">文字</view>
+                <view class="panel__content">
+                    <view class="bar-item">
+                        <at-noticebar single="{{true}}" __triggerObserer="{{ _triggerObserer }}">[单行] 这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏</at-noticebar>
+                    </view>
+                    <view class="bar-item">
+                        <at-noticebar __triggerObserer="{{ _triggerObserer }}">[多行] 这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏</at-noticebar>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">跑马灯</view>
+                <view class="panel__content">
+                    <view class="bar-item">
+                        <at-noticebar marquee="{{true}}" __triggerObserer="{{ _triggerObserer }}">[纯文字]这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏[结束]</at-noticebar>
+                    </view>
+                    <view class="bar-item">
+                        <at-noticebar marquee="{{true}}" __triggerObserer="{{ _triggerObserer }}"
+                        icon="volume-plus">[带icon]这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏[结束]</at-noticebar>
+                    </view>
+                    <view class="bar-item">
+                        <at-noticebar marquee="{{true}}" __triggerObserer="{{ _triggerObserer }}">[超长文本]这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏[结束]</at-noticebar>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">图标</view>
+                <view class="panel__content">
+                    <view class="bar-item">
+                        <at-noticebar icon="volume-plus" __triggerObserer="{{ _triggerObserer }}"
+                        single="{{true}}">[单行] 这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏</at-noticebar>
+                    </view>
+                    <view class="bar-item">
+                        <at-noticebar icon="volume-plus" __triggerObserer="{{ _triggerObserer }}">[多行] 这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏</at-noticebar>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">查看更多</view>
+                <view class="panel__content">
+                    <view class="bar-item">
+                        <at-noticebar showMore="{{true}}" __triggerObserer="{{ _triggerObserer }}"
+                        single="{{true}}" bindongotomore="onGotoMore" __fn_onGotoMore="{{true}}"
+                        data-e-onGotoMore-so="this">[单行] 这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏</at-noticebar>
+                    </view>
+                    <view class="bar-item">
+                        <at-noticebar showMore="{{true}}" __triggerObserer="{{ _triggerObserer }}"
+                        icon="volume-plus" single="{{true}}" bindongotomore="onGotoMore" __fn_onGotoMore="{{true}}"
+                        data-e-onGotoMore-so="this">[单行] 这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏</at-noticebar>
+                    </view>
+                    <view class="bar-item">
+                        <at-noticebar showMore="{{true}}" __triggerObserer="{{ _triggerObserer }}"
+                        moreText="更多内容" bindongotomore="onGotoMore" __fn_onGotoMore="{{true}}"
+                        data-e-onGotoMore-so="this">[多行] 这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏</at-noticebar>
+                    </view>
+                    <view class="bar-item">
+                        <at-noticebar showMore="{{true}}" __triggerObserer="{{ _triggerObserer }}"
+                        moreText="更多内容" icon="volume-plus" bindongotomore="onGotoMore" __fn_onGotoMore="{{true}}"
+                        data-e-onGotoMore-so="this">[多行] 这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏</at-noticebar>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">关闭按钮</view>
+                <view class="panel__content">
+                    <view class="bar-item">
+                        <at-noticebar close="{{true}}" __triggerObserer="{{ _triggerObserer }}"
+                        single="{{true}}">[单行] 这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏</at-noticebar>
+                    </view>
+                    <view class="bar-item">
+                        <at-noticebar close="{{true}}" __triggerObserer="{{ _triggerObserer }}"
+                        icon="volume-plus" single="{{true}}">[单行] 这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏</at-noticebar>
+                    </view>
+                    <view class="bar-item">
+                        <at-noticebar close="{{true}}" __triggerObserer="{{ _triggerObserer }}"
+                        moreUrl="https://taro.aotu.io/" single="{{true}}">[单行] 这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏</at-noticebar>
+                    </view>
+                    <view class="bar-item">
+                        <at-noticebar close="{{true}}" __triggerObserer="{{ _triggerObserer }}"
+                        icon="volume-plus" moreUrl="https://taro.aotu.io/" single="{{true}}">[单行] 这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏</at-noticebar>
+                    </view>
+                    <view class="bar-item">
+                        <at-noticebar close="{{true}}" __triggerObserer="{{ _triggerObserer }}">[多行] 这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏</at-noticebar>
+                    </view>
+                    <view class="bar-item">
+                        <at-noticebar close="{{true}}" __triggerObserer="{{ _triggerObserer }}"
+                        moreUrl="https://taro.aotu.io/">[多行] 这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏</at-noticebar>
+                    </view>
+                    <view class="bar-item">
+                        <at-noticebar close="{{true}}" __triggerObserer="{{ _triggerObserer }}"
+                        icon="volume-plus" moreUrl="https://taro.aotu.io/">[多行] 这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏</at-noticebar>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

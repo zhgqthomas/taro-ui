@@ -1,0 +1,6 @@
+
+.btn-item {
+  margin-top: 30rpx;
+  color: #666;
+  font-size: 24rpx;
+  text-align: center; }

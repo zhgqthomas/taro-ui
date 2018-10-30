@@ -1,0 +1,140 @@
+<block>
+    <view class="page">
+        <docs-header title="Tabs 标签页" __triggerObserer="{{ _triggerObserer }}"></docs-header>
+        <view class="doc-body">
+            <view class="panel">
+                <view class="panel__title">等宽标签栏</view>
+                <view class="panel__content">
+                    <at-tabs swipeable="{{false}}" __triggerObserer="{{ _triggerObserer }}"
+                    current="{{current1}}" tabList="{{tabList1}}" bindonclick="handleClick"
+                    __fn_onClick="{{true}}" data-e-handleClick-so="this" data-e-handleClick-a-a="current1">
+                        <at-tabs-pane current="{{current1}}" __triggerObserer="{{ _triggerObserer }}"
+                        index="{{0}}">
+                            <view class="tab-content">标签页一的内容</view>
+                        </at-tabs-pane>
+                        <at-tabs-pane current="{{current1}}" __triggerObserer="{{ _triggerObserer }}"
+                        index="{{1}}">
+                            <view class="tab-content">标签页二的内容</view>
+                        </at-tabs-pane>
+                        <at-tabs-pane current="{{current1}}" __triggerObserer="{{ _triggerObserer }}"
+                        index="{{2}}">
+                            <view class="tab-content">标签页三的内容</view>
+                        </at-tabs-pane>
+                    </at-tabs>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">滚动标签栏</view>
+                <view class="panel__content">
+                    <at-tabs swipeable="{{false}}" __triggerObserer="{{ _triggerObserer }}"
+                    scroll="{{true}}" current="{{current2}}" tabList="{{tabList2}}" bindonclick="handleClick"
+                    __fn_onClick="{{true}}" data-e-handleClick-so="this" data-e-handleClick-a-a="current2">
+                        <at-tabs-pane current="{{current2}}" __triggerObserer="{{ _triggerObserer }}"
+                        index="{{0}}">
+                            <view class="tab-content">标签页一的内容</view>
+                        </at-tabs-pane>
+                        <at-tabs-pane current="{{current2}}" __triggerObserer="{{ _triggerObserer }}"
+                        index="{{1}}">
+                            <view class="tab-content">标签页二的内容</view>
+                        </at-tabs-pane>
+                        <at-tabs-pane current="{{current2}}" __triggerObserer="{{ _triggerObserer }}"
+                        index="{{2}}">
+                            <view class="tab-content">标签页三的内容</view>
+                        </at-tabs-pane>
+                        <at-tabs-pane current="{{current2}}" __triggerObserer="{{ _triggerObserer }}"
+                        index="{{3}}">
+                            <view class="tab-content">标签页四的内容</view>
+                        </at-tabs-pane>
+                        <at-tabs-pane current="{{current2}}" __triggerObserer="{{ _triggerObserer }}"
+                        index="{{4}}">
+                            <view class="tab-content">标签页五的内容</view>
+                        </at-tabs-pane>
+                        <at-tabs-pane current="{{current2}}" __triggerObserer="{{ _triggerObserer }}"
+                        index="{{5}}">
+                            <view class="tab-content">标签页六的内容</view>
+                        </at-tabs-pane>
+                    </at-tabs>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">滑动切换内容</view>
+                <view class="panel__content">
+                    <at-tabs current="{{current3}}" __triggerObserer="{{ _triggerObserer }}"
+                    tabList="{{tabList1}}" bindonclick="handleClick" __fn_onClick="{{true}}"
+                    data-e-handleClick-so="this" data-e-handleClick-a-a="current3">
+                        <at-tabs-pane current="{{current3}}" __triggerObserer="{{ _triggerObserer }}"
+                        index="{{0}}">
+                            <view class="tab-content">标签页一的内容</view>
+                        </at-tabs-pane>
+                        <at-tabs-pane current="{{current3}}" __triggerObserer="{{ _triggerObserer }}"
+                        index="{{1}}">
+                            <view class="tab-content">标签页二的内容</view>
+                        </at-tabs-pane>
+                        <at-tabs-pane current="{{current3}}" __triggerObserer="{{ _triggerObserer }}"
+                        index="{{2}}">
+                            <view class="tab-content">标签页三的内容</view>
+                        </at-tabs-pane>
+                    </at-tabs>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">垂直模式</view>
+                <view class="panel__content">
+                    <at-tabs height="200px" __triggerObserer="{{ _triggerObserer }}" scroll="{{true}}"
+                    tabDirection="vertical" current="{{current4}}" tabList="{{tabList2}}" bindonclick="handleClick"
+                    __fn_onClick="{{true}}" data-e-handleClick-so="this" data-e-handleClick-a-a="current4">
+                        <at-tabs-pane tabDirection="vertical" __triggerObserer="{{ _triggerObserer }}"
+                        current="{{current4}}" index="{{0}}">
+                            <view class="tab-content--vertical">标签页一的内容</view>
+                        </at-tabs-pane>
+                        <at-tabs-pane tabDirection="vertical" __triggerObserer="{{ _triggerObserer }}"
+                        current="{{current4}}" index="{{1}}">
+                            <view class="tab-content--vertical">标签页二的内容</view>
+                        </at-tabs-pane>
+                        <at-tabs-pane tabDirection="vertical" __triggerObserer="{{ _triggerObserer }}"
+                        current="{{current4}}" index="{{2}}">
+                            <view class="tab-content--vertical">标签页三的内容</view>
+                        </at-tabs-pane>
+                        <at-tabs-pane tabDirection="vertical" __triggerObserer="{{ _triggerObserer }}"
+                        current="{{current4}}" index="{{3}}">
+                            <view class="tab-content--vertical">标签页四的内容</view>
+                        </at-tabs-pane>
+                        <at-tabs-pane tabDirection="vertical" __triggerObserer="{{ _triggerObserer }}"
+                        current="{{current4}}" index="{{4}}">
+                            <view class="tab-content--vertical">标签页五的内容</view>
+                        </at-tabs-pane>
+                        <at-tabs-pane tabDirection="vertical" __triggerObserer="{{ _triggerObserer }}"
+                        current="{{current4}}" index="{{5}}">
+                            <view class="tab-content--vertical">标签页六的内容</view>
+                        </at-tabs-pane>
+                    </at-tabs>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">禁止内容切换动画</view>
+                <view class="panel__content">
+                    <at-tabs current="{{current5}}" __triggerObserer="{{ _triggerObserer }}"
+                    animated="{{false}}" tabList="{{tabList1}}" bindonclick="handleClick" __fn_onClick="{{true}}"
+                    data-e-handleClick-so="this" data-e-handleClick-a-a="current5">
+                        <at-tabs-pane current="{{current5}}" __triggerObserer="{{ _triggerObserer }}"
+                        index="{{0}}">
+                            <view class="tab-content">标签页一的内容</view>
+                        </at-tabs-pane>
+                        <at-tabs-pane current="{{current5}}" __triggerObserer="{{ _triggerObserer }}"
+                        index="{{1}}">
+                            <view class="tab-content">标签页二的内容</view>
+                        </at-tabs-pane>
+                        <at-tabs-pane current="{{current5}}" __triggerObserer="{{ _triggerObserer }}"
+                        index="{{2}}">
+                            <view class="tab-content">标签页三的内容</view>
+                        </at-tabs-pane>
+                        <at-tabs-pane current="{{current5}}" __triggerObserer="{{ _triggerObserer }}"
+                        index="{{3}}">
+                            <view class="tab-content">标签页四的内容</view>
+                        </at-tabs-pane>
+                    </at-tabs>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

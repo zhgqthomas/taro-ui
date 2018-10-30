@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "docs-header": "../../components/doc-header/index",
+    "at-button": "../../../components/button/index",
+    "at-float-layout": "../../../components/float-layout/index"
+  },
+  "navigationBarTitleText": "Taro UI"
+}

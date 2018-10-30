@@ -1,0 +1,58 @@
+
+.color-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.color-item {
+  margin-bottom: 40rpx;
+  width: 33%;
+  text-align: center; }
+  .color-item__circle {
+    position: relative;
+    margin: 0 auto;
+    width: 150rpx;
+    height: 150rpx;
+    background: #78A4FA;
+    border-radius: 50%; }
+    .color-item__circle .inner-circle-1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -50rpx;
+      margin-top: -50rpx;
+      width: 100rpx;
+      height: 100rpx;
+      background: #fff;
+      border-radius: 50%; }
+    .color-item__circle .inner-circle-2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -32rpx;
+      margin-top: -32rpx;
+      width: 64rpx;
+      height: 64rpx;
+      border: 1rpx solid #78A4FA;
+      border-radius: 50%;
+      opacity: 0.3; }
+  .color-item__info {
+    margin-top: 20rpx;
+    color: #88889C;
+    font-size: 20rpx;
+    text-align: center; }
+    .color-item__info .name,
+    .color-item__info .hex {
+      display: block; }

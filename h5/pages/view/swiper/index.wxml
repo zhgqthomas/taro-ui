@@ -1,0 +1,55 @@
+<block>
+    <view class="page">
+        <docs-header title="Swiper 滑块视图容器" __triggerObserer="{{ _triggerObserer }}"></docs-header>
+        <view class="doc-body">
+            <view class="panel">
+                <view class="panel__title">基础用法</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <swiper slide-mult="10" indicator-color="#999" indicator-active-color="#333"
+                        current="{{current}}" duration="{{duration}}" interval="{{interval}}" circular="{{isCircular}}"
+                        autoplay="{{isAutoplay}}" indicator-dots="{{hasIndicatorDots}}" pre-margin="20">
+                            <swiper-item wx:key="{{idx}}" wx:for="{{imgUrls}}" wx:for-item="item"
+                            wx:for-index="idx">
+                                <image mode="widthFix" src="{{item}}" class="slide-image" width="355"
+                                height="150" />
+                            </swiper-item>
+                        </swiper>
+                        <view class="control-cnt">
+                            <at-list __triggerObserer="{{ _triggerObserer }}">
+                                <at-list-item title="指示点" __triggerObserer="{{ _triggerObserer }}" switchIsCheck="{{hasIndicatorDots}}"
+                                isSwitch="{{true}}" bindonswitchchange="setIndicatorDots" __fn_onSwitchChange="{{true}}"></at-list-item>
+                                <at-list-item title="自动播放" __triggerObserer="{{ _triggerObserer }}"
+                                switchIsCheck="{{isAutoplay}}" isSwitch="{{true}}" bindonswitchchange="setAutoPlay"
+                                __fn_onSwitchChange="{{true}}"></at-list-item>
+                                <at-list-item title="循环播放" __triggerObserer="{{ _triggerObserer }}"
+                                switchIsCheck="{{isCircular}}" isSwitch="{{true}}" bindonswitchchange="setCircular"
+                                __fn_onSwitchChange="{{true}}"></at-list-item>
+                            </at-list>
+                            <view class="slider-list">
+                                <view class="slider-list__item">
+                                    <view class="slider-list__item-header">
+                                        <text>幻灯片切换时长(ms)</text>
+                                    </view>
+                                    <view class="slider-list__item-body">
+                                        <slider active-color="#6190e8" show-value="{{true}}" step="{{1}}" min="{{500}}"
+                                        max="{{2000}}" value="{{duration}}" bindchange="setDuration"></slider>
+                                    </view>
+                                </view>
+                                <view class="slider-list__item">
+                                    <view class="slider-list__item-header">
+                                        <text>自动播放间隔时长(ms)</text>
+                                    </view>
+                                    <view class="slider-list__item-body">
+                                        <slider active-color="#6190e8" show-value="{{true}}" step="{{1}}" min="{{2000}}"
+                                        max="{{10000}}" value="{{interval}}" bindchange="setInterval"></slider>
+                                    </view>
+                                </view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

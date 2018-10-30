@@ -1,0 +1,5 @@
+
+.example--item {
+  margin-bottom: 24rpx; }
+  .example--item:last-child {
+    margin-bottom: 0; }

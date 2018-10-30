@@ -1,0 +1,184 @@
+<block>
+    <view class="page">
+        <docs-header title="Button 按钮" __triggerObserer="{{ _triggerObserer }}"></docs-header>
+        <view class="doc-body">
+            <view class="panel">
+                <view class="panel__title">主操作</view>
+                <view class="panel__content">
+                    <view class="btn-item">
+                        <at-button type="primary" __triggerObserer="{{ _triggerObserer }}" bindonclick="onButtonClick"
+                        __fn_onClick="{{true}}" data-e-onButtonClick-so="this">主操作按钮</at-button>
+                    </view>
+                    <view class="btn-item">
+                        <at-button type="primary" __triggerObserer="{{ _triggerObserer }}" loading="{{true}}"
+                        bindonclick="onButtonClick" __fn_onClick="{{true}}" data-e-onButtonClick-so="this">Loading</at-button>
+                    </view>
+                    <view class="btn-item">
+                        <at-button type="primary" __triggerObserer="{{ _triggerObserer }}" disabled="{{true}}">不可操作</at-button>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">次要操作</view>
+                <view class="panel__content">
+                    <view class="btn-item">
+                        <at-button type="secondary" __triggerObserer="{{ _triggerObserer }}">次操作按钮</at-button>
+                    </view>
+                    <view class="btn-item">
+                        <at-button type="secondary" __triggerObserer="{{ _triggerObserer }}" loading="{{true}}">Loading</at-button>
+                    </view>
+                    <view class="btn-item">
+                        <at-button type="secondary" __triggerObserer="{{ _triggerObserer }}" disabled="{{true}}">不可操作</at-button>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">次次要操作</view>
+                <view class="panel__content">
+                    <view class="btn-item">
+                        <at-button __triggerObserer="{{ _triggerObserer }}">次次要操作按钮</at-button>
+                    </view>
+                    <view class="btn-item">
+                        <at-button loading="{{true}}" __triggerObserer="{{ _triggerObserer }}">Loading</at-button>
+                    </view>
+                    <view class="btn-item">
+                        <at-button disabled="{{true}}" __triggerObserer="{{ _triggerObserer }}">不可操作</at-button>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">通栏按钮</view>
+                <view class="panel__content" style="padding:0">
+                    <view class="btn-item">
+                        <at-button type="primary" __triggerObserer="{{ _triggerObserer }}" full="{{true}}">主操作按钮</at-button>
+                    </view>
+                    <view class="btn-item">
+                        <at-button type="secondary" __triggerObserer="{{ _triggerObserer }}" full="{{true}}">次操作按钮</at-button>
+                    </view>
+                    <view class="btn-item">
+                        <at-button full="{{true}}" __triggerObserer="{{ _triggerObserer }}">次次要操作按钮</at-button>
+                    </view>
+                    <view class="btn-item">
+                        <at-button disabled="{{true}}" __triggerObserer="{{ _triggerObserer }}"
+                        full="{{true}}">不可操作</at-button>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">小按钮</view>
+                <view class="panel__content">
+                    <view class="btn-item">
+                        <view class="subitem">
+                            <at-button type="primary" __triggerObserer="{{ _triggerObserer }}" size="small">按钮</at-button>
+                        </view>
+                        <view class="subitem">
+                            <at-button type="secondary" __triggerObserer="{{ _triggerObserer }}" size="small">按钮</at-button>
+                        </view>
+                        <view class="subitem">
+                            <at-button size="small" __triggerObserer="{{ _triggerObserer }}">按钮</at-button>
+                        </view>
+                    </view>
+                    <view class="btn-item">
+                        <view class="subitem">
+                            <at-button type="primary" __triggerObserer="{{ _triggerObserer }}" size="small"
+                            loading="{{true}}"></at-button>
+                        </view>
+                        <view class="subitem">
+                            <at-button type="secondary" __triggerObserer="{{ _triggerObserer }}" size="small"
+                            loading="{{true}}"></at-button>
+                        </view>
+                        <view class="subitem">
+                            <at-button size="small" __triggerObserer="{{ _triggerObserer }}" loading="{{true}}"></at-button>
+                        </view>
+                    </view>
+                    <view class="btn-item">
+                        <view class="subitem">
+                            <at-button type="primary" __triggerObserer="{{ _triggerObserer }}" size="small"
+                            disabled="{{true}}">按钮</at-button>
+                        </view>
+                        <view class="subitem">
+                            <at-button type="secondary" __triggerObserer="{{ _triggerObserer }}" size="small"
+                            disabled="{{true}}">按钮</at-button>
+                        </view>
+                        <view class="subitem">
+                            <at-button size="small" __triggerObserer="{{ _triggerObserer }}" disabled="{{true}}">按钮</at-button>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">圆角按钮</view>
+                <view class="panel__content">
+                    <view class="btn-item">
+                        <view class="subitem">
+                            <at-button type="primary" __triggerObserer="{{ _triggerObserer }}" size="small"
+                            circle="{{true}}">按钮</at-button>
+                        </view>
+                        <view class="subitem">
+                            <at-button type="secondary" __triggerObserer="{{ _triggerObserer }}" size="small"
+                            circle="{{true}}">按钮</at-button>
+                        </view>
+                        <view class="subitem">
+                            <at-button size="small" __triggerObserer="{{ _triggerObserer }}" circle="{{true}}">按钮</at-button>
+                        </view>
+                    </view>
+                    <view class="btn-item">
+                        <view class="subitem">
+                            <at-button type="primary" __triggerObserer="{{ _triggerObserer }}" size="small"
+                            loading="{{true}}" circle="{{true}}"></at-button>
+                        </view>
+                        <view class="subitem">
+                            <at-button type="secondary" __triggerObserer="{{ _triggerObserer }}" size="small"
+                            loading="{{true}}" circle="{{true}}"></at-button>
+                        </view>
+                        <view class="subitem">
+                            <at-button size="small" __triggerObserer="{{ _triggerObserer }}" loading="{{true}}"
+                            circle="{{true}}"></at-button>
+                        </view>
+                    </view>
+                    <view class="btn-item">
+                        <view class="subitem">
+                            <at-button type="primary" __triggerObserer="{{ _triggerObserer }}" size="small"
+                            disabled="{{true}}" circle="{{true}}">按钮</at-button>
+                        </view>
+                        <view class="subitem">
+                            <at-button type="secondary" __triggerObserer="{{ _triggerObserer }}" size="small"
+                            disabled="{{true}}" circle="{{true}}">按钮</at-button>
+                        </view>
+                        <view class="subitem">
+                            <at-button size="small" __triggerObserer="{{ _triggerObserer }}" disabled="{{true}}"
+                            circle="{{true}}">按钮</at-button>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">小程序 button 属性</view>
+                <view class="panel__content">
+                    <view class="btn-item">
+                        <at-button openType="share" __triggerObserer="{{ _triggerObserer }}" type="primary"
+                        bindonclick="onButtonClick" __fn_onClick="{{true}}" data-e-onButtonClick-so="this"
+                        data-e-onButtonClick-a-a="打开分享（仅小程序版支持）">分享</at-button>
+                    </view>
+                    <view class="btn-item">
+                        <at-button type="secondary" __triggerObserer="{{ _triggerObserer }}" openType="contact"
+                        bindonclick="onButtonClick" bindoncontact="onContact" __fn_onClick="{{true}}"
+                        data-e-onButtonClick-so="this" data-e-onButtonClick-a-a="打开客服（仅小程序版支持）"
+                        __fn_onContact="{{true}}" data-e-onContact-so="this">联系 Taro UI 客服</at-button>
+                    </view>
+                    <view class="btn-item">
+                        <form report-submit="{{true}}" bindsubmit="onSubmit" bindreset="onReset"
+                        data-e-onSubmit-so="this" data-e-onReset-so="this">
+                            <view class="btn-item">
+                                <at-button type="primary" __triggerObserer="{{ _triggerObserer }}" formType="submit">form submit</at-button>
+                            </view>
+                            <view class="btn-item">
+                                <at-button type="secondary" __triggerObserer="{{ _triggerObserer }}" formType="reset">form reset</at-button>
+                            </view>
+                        </form>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

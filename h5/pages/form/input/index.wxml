@@ -1,0 +1,98 @@
+<block>
+    <view class="page">
+        <docs-header title="Input 输入框" __triggerObserer="{{ _triggerObserer }}"></docs-header>
+        <view class="doc-body">
+            <view class="panel">
+                <view class="panel__title">基础用法</view>
+                <view class="panel__content no-padding">
+                    <view class="component-item">
+                        <at-form __triggerObserer="{{ _triggerObserer }}">
+                            <at-input name="value1" __triggerObserer="{{ _triggerObserer }}" title="标准五个字"
+                            type="text" placeholder="标准五个字" value="{{value1}}" bindonchange="handleInput"
+                            __fn_onChange="{{true}}" data-e-handleInput-so="this" data-e-handleInput-a-a="value1"></at-input>
+                            <at-input name="value2" __triggerObserer="{{ _triggerObserer }}"
+                            title="标题实在特别长就换行" placeholder="其他列保持正常间距" value="{{value2}}" bindonchange="handleInput"
+                            __fn_onChange="{{true}}" data-e-handleInput-so="this" data-e-handleInput-a-a="value2"></at-input>
+                            <at-input name="value3" __triggerObserer="{{ _triggerObserer }}"
+                            border="{{false}}" placeholder="无标题" value="{{value3}}" bindonchange="handleInput"
+                            __fn_onChange="{{true}}" data-e-handleInput-so="this" data-e-handleInput-a-a="value3"></at-input>
+                        </at-form>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">输入框类型</view>
+                <view class="panel__content no-padding">
+                    <view class="component-item">
+                        <at-form __triggerObserer="{{ _triggerObserer }}">
+                            <at-input name="value4" __triggerObserer="{{ _triggerObserer }}" title="文本"
+                            type="text" placeholder="单行文本" value="{{value4}}" bindonchange="handleInput"
+                            __fn_onChange="{{true}}" data-e-handleInput-so="this" data-e-handleInput-a-a="value4"></at-input>
+                            <at-input name="value5" __triggerObserer="{{ _triggerObserer }}"
+                            title="数字" type="number" placeholder="请输入数字" value="{{value5}}" bindonchange="handleInput"
+                            __fn_onChange="{{true}}" data-e-handleInput-so="this" data-e-handleInput-a-a="value5"></at-input>
+                            <at-input name="value6" __triggerObserer="{{ _triggerObserer }}"
+                            title="密码" type="password" placeholder="密码不能少于10位数" value="{{value6}}"
+                            bindonchange="handleInput" __fn_onChange="{{true}}" data-e-handleInput-so="this"
+                            data-e-handleInput-a-a="value6"></at-input>
+                            <at-input name="value7" __triggerObserer="{{ _triggerObserer }}"
+                            title="身份证" type="idcard" placeholder="身份证号码" value="{{value7}}" bindonchange="handleInput"
+                            __fn_onChange="{{true}}" data-e-handleInput-so="this" data-e-handleInput-a-a="value7"></at-input>
+                            <at-input name="value8" __triggerObserer="{{ _triggerObserer }}"
+                            title="小数" type="digit" placeholder="请输入小数" value="{{value8}}" bindonchange="handleInput"
+                            __fn_onChange="{{true}}" data-e-handleInput-so="this" data-e-handleInput-a-a="value8"></at-input>
+                            <at-input name="value9" __triggerObserer="{{ _triggerObserer }}"
+                            border="{{false}}" title="手机号码" type="phone" placeholder="手机号码" value="{{value9}}"
+                            bindonchange="handleInput" __fn_onChange="{{true}}" data-e-handleInput-so="this"
+                            data-e-handleInput-a-a="value9"></at-input>
+                        </at-form>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">状态</view>
+                <view class="panel__content no-padding">
+                    <view class="component-item">
+                        <at-form __triggerObserer="{{ _triggerObserer }}">
+                            <at-input name="value10" __triggerObserer="{{ _triggerObserer }}" disabled="{{true}}"
+                            title="禁用" type="text" placeholder="禁止输入" value="{{value10}}" bindonchange="handleInput"
+                            __fn_onChange="{{true}}" data-e-handleInput-so="this" data-e-handleInput-a-a="value10"></at-input>
+                            <at-input name="value11" __triggerObserer="{{ _triggerObserer }}"
+                            error="{{true}}" title="出现错误" type="text" placeholder="点击按钮触发回调" value="{{value11}}"
+                            bindonchange="handleInput" bindonerrorclick="onClickErrorIcon" __fn_onChange="{{true}}"
+                            data-e-handleInput-so="this" data-e-handleInput-a-a="value11" __fn_onErrorClick="{{true}}"
+                            data-e-onClickErrorIcon-so="this"></at-input>
+                            <at-input name="value12" __triggerObserer="{{ _triggerObserer }}"
+                            editable="{{false}}" title="不可编辑" type="text" placeholder="不可编辑" value="不可编辑的内容"></at-input>
+                            <at-input name="value13" __triggerObserer="{{ _triggerObserer }}"
+                            border="{{false}}" clear="{{true}}" title="清除按钮" type="text" placeholder="点击清除按钮清空内容"
+                            value="{{value13}}" bindonchange="handleInput" __fn_onChange="{{true}}"
+                            data-e-handleInput-so="this" data-e-handleInput-a-a="value13"></at-input>
+                        </at-form>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">自定义右边栏</view>
+                <view class="panel__content no-padding">
+                    <view class="component-item">
+                        <at-form __triggerObserer="{{ _triggerObserer }}">
+                            <at-input name="value14" __triggerObserer="{{ _triggerObserer }}" title="验证码"
+                            type="text" maxlength="4" clear="{{true}}" placeholder="验证码" value="{{value14}}"
+                            bindonchange="handleInput" __fn_onChange="{{true}}" data-e-handleInput-so="this"
+                            data-e-handleInput-a-a="value14">
+                                <image src="{{verificationCode}}" />
+                            </at-input>
+                            <at-input name="value15" __triggerObserer="{{ _triggerObserer }}" border="{{false}}"
+                            type="phone" clear="{{true}}" placeholder="请输入手机号码" value="{{value15}}"
+                            bindonchange="handleInput" __fn_onChange="{{true}}" data-e-handleInput-so="this"
+                            data-e-handleInput-a-a="value15">
+                                <view style="{{anonymousState__temp}}" bindtap="sendCode" data-e-sendCode-so="this">{{anonymousState__temp2}}</view>
+                            </at-input>
+                        </at-form>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

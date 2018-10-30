@@ -1,0 +1,58 @@
+<block>
+    <view class="page">
+        <docs-header title="Slider 滑动条" __triggerObserer="{{ _triggerObserer }}"></docs-header>
+        <view class="doc-body">
+            <view class="panel">
+                <view class="panel__title">基础用法</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <view class="example-item__desc">step=1</view>
+                        <at-slider step="{{1}}" __triggerObserer="{{ _triggerObserer }}"
+                        value="{{50}}"></at-slider>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">显示当前 Value</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <view class="example-item__desc">step=1</view>
+                        <at-slider step="{{1}}" __triggerObserer="{{ _triggerObserer }}"
+                        value="{{50}}" showValue="{{true}}"></at-slider>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">设置最大/最小值</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <view class="example-item__desc">step=1, min=50, max=200</view>
+                        <at-slider step="{{1}}" __triggerObserer="{{ _triggerObserer }}"
+                        value="{{100}}" min="{{50}}" max="{{200}}" showValue="{{true}}"></at-slider>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">自定义样式</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <view class="example-item__desc">step=1, blockSize=24</view>
+                        <at-slider step="{{1}}" __triggerObserer="{{ _triggerObserer }}"
+                        value="{{50}}" activeColor="#4285F4" backgroundColor="#BDBDBD" blockColor="#4285F4"
+                        blockSize="{{24}}"></at-slider>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">禁用状态</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <view class="example-item__desc">step=1, blockSize=24</view>
+                        <at-slider step="{{1}}" __triggerObserer="{{ _triggerObserer }}"
+                        value="{{50}}" showValue="{{true}}" disabled="{{true}}"></at-slider>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

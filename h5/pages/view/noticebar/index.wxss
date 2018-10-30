@@ -1,0 +1,5 @@
+
+.panel__content .bar-item {
+  margin-bottom: 20rpx; }
+  .panel__content .bar-item:last-child {
+    margin-bottom: 0; }

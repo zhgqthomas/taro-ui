@@ -1,0 +1,37 @@
+<block>
+    <view class="page">
+        <docs-header title="Radio 单选框" __triggerObserer="{{ _triggerObserer }}"></docs-header>
+        <view class="doc-body">
+            <view class="panel">
+                <view class="panel__title">基础用法</view>
+                <view class="panel__content no-padding">
+                    <view class="radio-container">
+                        <at-radio options="{{radioOptions1}}" __triggerObserer="{{ _triggerObserer }}"
+                        value="{{radioValue1}}" bindonclick="handleRadioChange" __fn_onClick="{{true}}"
+                        data-e-handleRadioChange-so="this"></at-radio>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">含有单项描述</view>
+                <view class="panel__content no-padding">
+                    <view class="radio-container">
+                        <at-radio options="{{radioOptions2}}" __triggerObserer="{{ _triggerObserer }}"
+                        value="{{radioValue2}}" bindonclick="handleRadioChangeScnd" __fn_onClick="{{true}}"
+                        data-e-handleRadioChangeScnd-so="this"></at-radio>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">单项禁用</view>
+                <view class="panel__content no-padding">
+                    <view class="radio-container">
+                        <at-radio options="{{radioOptions3}}" __triggerObserer="{{ _triggerObserer }}"
+                        value="{{radioValue3}}" bindonclick="handleRadioChangeThd" __fn_onClick="{{true}}"
+                        data-e-handleRadioChangeThd-so="this"></at-radio>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

@@ -1,0 +1,33 @@
+<block>
+    <view class="page">
+        <docs-header title="Drawer 抽屉" __triggerObserer="{{ _triggerObserer }}"></docs-header>
+        <view class="doc-body">
+            <view class="panel">
+                <view class="panel__title">左边滑出</view>
+                <view class="panel__content no-padding">
+                    <view class="example">
+                        <at-button bindonclick="leftDrawerClick" __triggerObserer="{{ _triggerObserer }}"
+                        __fn_onClick="{{true}}" data-e-leftDrawerClick-so="this">显示 Drawer</at-button>
+                        <at-drawer show="{{leftDrawerShow}}" __triggerObserer="{{ _triggerObserer }}"
+                        mask="{{true}}" bindonitemclick="onItemClick" bindonclose="onClose" items="{{['菜单1', '菜单2']}}"
+                        __fn_onItemClick="{{true}}" data-e-onItemClick-so="this" __fn_onClose="{{true}}"
+                        data-e-onClose-so="this"></at-drawer>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">右边滑出</view>
+                <view class="panel__content no-padding">
+                    <view class="example">
+                        <at-button bindonclick="rightDrawerClick" __triggerObserer="{{ _triggerObserer }}"
+                        __fn_onClick="{{true}}" data-e-rightDrawerClick-so="this">显示 Drawer</at-button>
+                        <at-drawer show="{{rightDrawerShow}}" __triggerObserer="{{ _triggerObserer }}"
+                        right="{{true}}" mask="{{true}}" bindonitemclick="onItemClick" bindonclose="onClose"
+                        items="{{['菜单1', '菜单2']}}" __fn_onItemClick="{{true}}" data-e-onItemClick-so="this"
+                        __fn_onClose="{{true}}" data-e-onClose-so="this"></at-drawer>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

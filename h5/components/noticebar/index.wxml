@@ -1,0 +1,33 @@
+<block>
+    <block wx:if="{{show}}">
+        <view class="{{anonymousState__temp}}" style="{{anonymousState__temp2}}">
+            <block wx:if="{{close}}">
+                <view class="at-noticebar__close" bindtap="onClose" data-e-onClose-so="this">
+                    <at-icon value="close" __triggerObserer="{{ _triggerObserer }}" size="16"
+                    color="#ccc"></at-icon>
+                </view>
+            </block>
+            <view class="at-noticebar__content">
+                <block wx:if="{{icon}}">
+                    <view class="at-noticebar__content-icon">
+                        <at-icon value="{{icon}}" __triggerObserer="{{ _triggerObserer }}" size="16"></at-icon>
+                    </view>
+                </block>
+                <view class="at-noticebar__content-text">
+                    <view animation="{{animationData}}" class="{{innerClassName}}" style="{{anonymousState__temp3}}">
+                        <slot></slot>
+                    </view>
+                </view>
+            </view>
+            <block wx:if="{{showMore}}">
+                <view class="at-noticebar__more" bindtap="onGotoMore" data-e-onGotoMore-so="this">
+                    <text class="text">{{_moreText}}</text>
+                    <view class="at-noticebar__more-icon">
+                        <at-icon value="chevron-right" __triggerObserer="{{ _triggerObserer }}"
+                        size="16"></at-icon>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </block>
+</block>

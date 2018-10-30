@@ -1,0 +1,19 @@
+<block>
+    <view class="{{rootClass}}" catchtouchmove="handleTouchMove">
+        <view bindtap="close" class="at-float-layout__overlay"></view>
+        <view class="at-float-layout__container layout">
+            <view class="layout-header">
+                <text class="layout-header__title">{{title}}</text>
+                <view class="layout-header__icon" bindtap="close">
+                    <at-icon value="close" __triggerObserer="{{ _triggerObserer }}" size="18"
+                    color="#CCC"></at-icon>
+                </view>
+            </view>
+            <view class="layout-body">
+                <scroll-view scroll-y="{{true}}" class="layout-body__content">
+                    <slot></slot>
+                </scroll-view>
+            </view>
+        </view>
+    </view>
+</block>

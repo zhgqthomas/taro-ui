@@ -1,0 +1,53 @@
+<block>
+    <view class="page">
+        <docs-header title="Pagination 分页器" __triggerObserer="{{ _triggerObserer }}"></docs-header>
+        <view class="doc-body">
+            <view class="panel">
+                <view class="panel__title">基础用法</view>
+                <view class="panel__content no-padding">
+                    <view class="example-item">
+                        <at-pagination pickerSelect="{{true}}" __triggerObserer="{{ _triggerObserer }}"
+                        total="{{20}}" pageSize="{{10}}" current="{{1}}"></at-pagination>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">图标类型</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-pagination pickerSelect="{{true}}" __triggerObserer="{{ _triggerObserer }}"
+                        icon="{{true}}" total="{{20}}" pageSize="{{10}}" current="{{1}}"></at-pagination>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">picker快速选择页码</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-pagination pickerSelect="{{true}}" __triggerObserer="{{ _triggerObserer }}"
+                        icon="{{true}}" total="{{20}}" pageSize="{{10}}" current="{{1}}"></at-pagination>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">改变数据长度</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-pagination pickerSelect="{{true}}" __triggerObserer="{{ _triggerObserer }}"
+                        icon="{{true}}" total="{{len}}" pageSize="{{pageSize}}" current="{{current}}"
+                        bindonpagechange="onPage" __fn_onPageChange="{{true}}" data-e-onPage-so="this"></at-pagination>
+                        <view class="btn-item">当前页：{{current}}，当前数据：{{len}}条，分页大小：{{pageSize}}</view>
+                        <view class="btn-item">
+                            <at-button type="primary" __triggerObserer="{{ _triggerObserer }}" bindonclick="onPageDataChange"
+                            __fn_onClick="{{true}}" data-e-onPageDataChange-so="this">增加10条数据</at-button>
+                        </view>
+                        <view class="btn-item">
+                            <at-button bindonclick="onCurrentChange" __triggerObserer="{{ _triggerObserer }}"
+                            __fn_onClick="{{true}}" data-e-onCurrentChange-so="this">重置</at-button>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

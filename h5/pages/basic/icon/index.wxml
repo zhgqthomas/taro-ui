@@ -1,0 +1,112 @@
+<block>
+    <view class="page">
+        <docs-header title="ICON 图标" __triggerObserer="{{ _triggerObserer }}"></docs-header>
+        <view class="doc-body">
+            <view class="panel">
+                <view class="panel__title">主要</view>
+                <view class="panel__content">
+                    <view class="icon-list">
+                        <view class="icon-list__item" wx:key="{{index}}" wx:for="{{icons.main}}"
+                        wx:for-item="icon" wx:for-index="index">
+                            <view class="icon-list__icon">
+                                <at-icon value="{{icon}}" __triggerObserer="{{ _triggerObserer }}" color="{{iconColor}}"
+                                size="{{iconSize}}"></at-icon>
+                            </view>
+                            <view class="icon-list__name">{{icon}}</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">文件</view>
+                <view class="panel__content">
+                    <view class="icon-list">
+                        <view class="icon-list__item" wx:key="{{index}}" wx:for="{{icons.file}}"
+                        wx:for-item="icon" wx:for-index="index">
+                            <view class="icon-list__icon">
+                                <at-icon value="{{icon}}" __triggerObserer="{{ _triggerObserer }}" color="{{iconColor}}"
+                                size="{{iconSize}}"></at-icon>
+                            </view>
+                            <view class="icon-list__name">{{icon}}</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">文本</view>
+                <view class="panel__content">
+                    <view class="icon-list">
+                        <view class="icon-list__item" wx:key="{{index}}" wx:for="{{icons.text}}"
+                        wx:for-item="icon" wx:for-index="index">
+                            <view class="icon-list__icon">
+                                <at-icon value="{{icon}}" __triggerObserer="{{ _triggerObserer }}" color="{{iconColor}}"
+                                size="{{iconSize}}"></at-icon>
+                            </view>
+                            <view class="icon-list__name">{{icon}}</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">箭头</view>
+                <view class="panel__content">
+                    <view class="icon-list">
+                        <view class="icon-list__item" wx:key="{{index}}" wx:for="{{icons.arrow}}"
+                        wx:for-item="icon" wx:for-index="index">
+                            <view class="icon-list__icon">
+                                <at-icon value="{{icon}}" __triggerObserer="{{ _triggerObserer }}" color="{{iconColor}}"
+                                size="{{iconSize}}"></at-icon>
+                            </view>
+                            <view class="icon-list__name">{{icon}}</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">媒体控制</view>
+                <view class="panel__content">
+                    <view class="icon-list">
+                        <view class="icon-list__item" wx:key="{{index}}" wx:for="{{icons.media}}"
+                        wx:for-item="icon" wx:for-index="index">
+                            <view class="icon-list__icon">
+                                <at-icon value="{{icon}}" __triggerObserer="{{ _triggerObserer }}" color="{{iconColor}}"
+                                size="{{iconSize}}"></at-icon>
+                            </view>
+                            <view class="icon-list__name">{{icon}}</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">多媒体</view>
+                <view class="panel__content">
+                    <view class="icon-list">
+                        <view class="icon-list__item" wx:key="{{index}}" wx:for="{{icons.photo}}"
+                        wx:for-item="icon" wx:for-index="index">
+                            <view class="icon-list__icon">
+                                <at-icon value="{{icon}}" __triggerObserer="{{ _triggerObserer }}" color="{{iconColor}}"
+                                size="{{iconSize}}"></at-icon>
+                            </view>
+                            <view class="icon-list__name">{{icon}}</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">Logo</view>
+                <view class="panel__content">
+                    <view class="icon-list">
+                        <view class="icon-list__item" wx:key="{{index}}" wx:for="{{icons.logo}}"
+                        wx:for-item="icon" wx:for-index="index">
+                            <view class="icon-list__icon">
+                                <at-icon value="{{icon}}" __triggerObserer="{{ _triggerObserer }}" color="{{iconColor}}"
+                                size="{{iconSize}}"></at-icon>
+                            </view>
+                            <view class="icon-list__name">{{icon}}</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

@@ -1,0 +1,23 @@
+<block>
+    <view class="{{anonymousState__temp}}" style="{{anonymousState__temp2}}">
+        <view class="at-search-bar__container">
+            <view class="at-search-bar__placeholder_wrap" style="{{anonymousState__temp3}}">
+                <at-icon value="search" __triggerObserer="{{ _triggerObserer }}" size="15"
+                color="#999"></at-icon>
+                <text class="at-search-bar__placeholder" style="{{anonymousState__temp4}}">{{placeholder}}</text>
+            </view>
+            <input class="at-search-bar__input" type="search" value="{{value}}" focus="{{focus}}"
+            disabled="{{disabled}}" maxlength="{{maxlength}}" bindinput="handleChange"
+            bindfocus="handleFocus" bindblur="handleBlur" bindconfirm="handleConfirm"
+            data-e-handleChange-so="this" data-e-handleFocus-so="this" data-e-handleBlur-so="this"
+            data-e-handleConfirm-so="this" />
+            <view class="at-search-bar__clear" style="{{anonymousState__temp5}}" bindtouchstart="handleClear"
+            data-e-handleClear-so="this">
+                <at-icon value="close-circle" __triggerObserer="{{ _triggerObserer }}"
+                size="15" color="#999"></at-icon>
+            </view>
+        </view>
+        <view bindtap="handleActionClick" class="at-search-bar__action" style="{{anonymousState__temp6}}"
+        data-e-handleActionClick-so="this">{{actionName}}</view>
+    </view>
+</block>

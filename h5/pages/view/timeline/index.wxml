@@ -1,0 +1,49 @@
+<block>
+    <view class="page">
+        <docs-header title="Timeline 时间轴" __triggerObserer="{{ _triggerObserer }}"></docs-header>
+        <view class="doc-body">
+            <view class="panel">
+                <view class="panel__title">基础用法</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-timeline items="{{anonymousState__temp}}" __triggerObserer="{{ _triggerObserer }}"></at-timeline>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">自定义颜色</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-timeline items="{{anonymousState__temp2}}" __triggerObserer="{{ _triggerObserer }}"></at-timeline>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">自定义图标</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-timeline items="{{anonymousState__temp3}}" __triggerObserer="{{ _triggerObserer }}"></at-timeline>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">幽灵节点</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-timeline pending="{{true}}" __triggerObserer="{{ _triggerObserer }}"
+                        items="{{anonymousState__temp4}}"></at-timeline>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">丰富内容</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-timeline pending="{{true}}" __triggerObserer="{{ _triggerObserer }}"
+                        items="{{anonymousState__temp5}}"></at-timeline>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

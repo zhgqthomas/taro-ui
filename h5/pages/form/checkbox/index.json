@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "docs-header": "../../components/doc-header/index",
+    "at-checkbox": "../../../components/checkbox/index"
+  },
+  "navigationBarTitleText": "Taro UI"
+}

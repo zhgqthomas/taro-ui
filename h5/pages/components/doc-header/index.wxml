@@ -1,0 +1,5 @@
+<block>
+    <view class="doc-header">
+        <view class="doc-header__title">{{title}}</view>
+    </view>
+</block>

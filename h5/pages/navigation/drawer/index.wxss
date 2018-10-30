@@ -1,0 +1,7 @@
+
+.page {
+  background-color: #fff; }
+
+.example {
+  margin-bottom: 15rpx;
+  text-align: center; }

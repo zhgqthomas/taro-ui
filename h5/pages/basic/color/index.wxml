@@ -1,0 +1,25 @@
+<block>
+    <view class="page">
+        <docs-header title="Color 颜色" __triggerObserer="{{ _triggerObserer }}"></docs-header>
+        <view class="doc-body">
+            <view class="panel" wx:key="{{item.type}}" wx:for="{{colorData}}" wx:for-item="item">
+                <view class="panel__title">{{item.type}}</view>
+                <view class="panel__content">
+                    <view class="color-list">
+                        <view class="color-item" wx:key="{{color.hex}}" wx:for="{{item.data}}"
+                        wx:for-item="color">
+                            <view class="color-item__circle" style="{{'background: ' + color.hex}}">
+                                <view class="inner-circle-1"></view>
+                                <view class="inner-circle-2" style="{{'border-color: ' + color.hex}}"></view>
+                            </view>
+                            <view class="color-item__info">
+                                <text class="name">{{color.name}}</text>
+                                <text class="hex" selectable="{{true}}">{{color.hex}}</text>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

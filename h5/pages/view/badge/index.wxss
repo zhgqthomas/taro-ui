@@ -1,0 +1,8 @@
+
+.panel__content .badge-item {
+  margin-bottom: 20rpx; }
+  .panel__content .badge-item:last-child {
+    margin-bottom: 0; }
+  .panel__content .badge-item .subitem {
+    display: inline-block;
+    margin-left: 40rpx; }

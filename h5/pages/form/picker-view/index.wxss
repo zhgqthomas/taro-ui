@@ -1,0 +1,5 @@
+
+.example-item .title-date {
+  margin: 40rpx 0 20rpx;
+  text-align: center;
+  font-size: 36rpx; }

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "docs-header": "../../components/doc-header/index",
+    "at-radio": "../../../components/radio/index"
+  },
+  "navigationBarTitleText": "Taro UI"
+}

@@ -1,0 +1,33 @@
+<block>
+    <view class="page">
+        <docs-header title="Grid 栅格" __triggerObserer="{{ _triggerObserer }}"></docs-header>
+        <view class="doc-body">
+            <view class="panel">
+                <view class="panel__title">正方形案例</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-grid data="{{data}}" __triggerObserer="{{ _triggerObserer }}" bindonclick="handleClick"
+                        __fn_onClick="{{true}}"></at-grid>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">矩形案例</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-grid mode="rect" __triggerObserer="{{ _triggerObserer }}" data="{{anonymousState__temp}}"></at-grid>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">没有边框</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-grid mode="rect" __triggerObserer="{{ _triggerObserer }}" data="{{anonymousState__temp2}}"
+                        hasBorder="{{false}}"></at-grid>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

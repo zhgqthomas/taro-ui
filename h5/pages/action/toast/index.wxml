@@ -1,0 +1,82 @@
+<block>
+    <view class="page toast-page">
+        <docs-header title="Toast 轻提示" __triggerObserer="{{ _triggerObserer }}"></docs-header>
+        <view class="doc-body">
+            <view class="panel">
+                <view class="panel__title">基本案例</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-button bindonclick="handleClick" __triggerObserer="{{ _triggerObserer }}"
+                        __fn_onClick="{{true}}" data-e-handleClick-so="this" data-e-handleClick-a-a="文本内容"
+                        data-e-handleClick-a-b="" data-e-handleClick-a-c="" data-e-handleClick-a-d="{{false}}"
+                        data-e-handleClick-a-e="">文本 Toast</at-button>
+                    </view>
+                    <view class="example-item">
+                        <at-button bindonclick="handleClick" __triggerObserer="{{ _triggerObserer }}"
+                        __fn_onClick="{{true}}" data-e-handleClick-so="this" data-e-handleClick-a-a="文本内容"
+                        data-e-handleClick-a-b="analytics" data-e-handleClick-a-c="" data-e-handleClick-a-d="{{false}}"
+                        data-e-handleClick-a-e="">文本 + ICON</at-button>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">自定义图片</view>
+                <view class="panel__content">
+                    <view class="example__item">
+                        <at-button bindonclick="handleClick" __triggerObserer="{{ _triggerObserer }}"
+                        __fn_onClick="{{true}}" data-e-handleClick-so="this" data-e-handleClick-a-a="凹凸实验室"
+                        data-e-handleClick-a-b="" data-e-handleClick-a-c="http://storage.360buyimg.com/mtd/home/group-21533885306540.png"
+                        data-e-handleClick-a-d="{{false}}" data-e-handleClick-a-e="">自定义图片 Toast</at-button>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">添加遮罩层</view>
+                <view class="panel__content">
+                    <view class="example__item">
+                        <at-button bindonclick="handleClick" __triggerObserer="{{ _triggerObserer }}"
+                        __fn_onClick="{{true}}" data-e-handleClick-so="this" data-e-handleClick-a-a="透明遮罩层的作用在于不可点击下面的元素"
+                        data-e-handleClick-a-b="" data-e-handleClick-a-c="" data-e-handleClick-a-d="{{true}}"
+                        data-e-handleClick-a-e="">添加遮罩层 Toast</at-button>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">Error Toast</view>
+                <view class="panel__content">
+                    <view class="example__item">
+                        <at-button bindonclick="handleClick" __triggerObserer="{{ _triggerObserer }}"
+                        __fn_onClick="{{true}}" data-e-handleClick-so="this" data-e-handleClick-a-a="错误提示"
+                        data-e-handleClick-a-b="" data-e-handleClick-a-c="" data-e-handleClick-a-d="{{true}}"
+                        data-e-handleClick-a-e="error">错误提示 Toast</at-button>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">Success Toast</view>
+                <view class="panel__content">
+                    <view class="example__item">
+                        <at-button bindonclick="handleClick" __triggerObserer="{{ _triggerObserer }}"
+                        __fn_onClick="{{true}}" data-e-handleClick-so="this" data-e-handleClick-a-a="正确提示"
+                        data-e-handleClick-a-b="" data-e-handleClick-a-c="" data-e-handleClick-a-d="{{true}}"
+                        data-e-handleClick-a-e="success">正确提示 Toast</at-button>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">Loading Toast</view>
+                <view class="panel__content">
+                    <view class="example__item">
+                        <at-button bindonclick="handleClick" __triggerObserer="{{ _triggerObserer }}"
+                        __fn_onClick="{{true}}" data-e-handleClick-so="this" data-e-handleClick-a-a="正在加载…"
+                        data-e-handleClick-a-b="" data-e-handleClick-a-c="" data-e-handleClick-a-d="{{true}}"
+                        data-e-handleClick-a-e="loading">加载中 Toast</at-button>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <at-toast icon="{{icon}}" __triggerObserer="{{ _triggerObserer }}" text="{{text}}"
+        image="{{image}}" status="{{status}}" hasMask="{{hasMask}}" isOpened="{{isOpened}}"
+        duration="{{duration}}" bindonclose="handleClose" __fn_onClose="{{true}}"></at-toast>
+    </view>
+</block>

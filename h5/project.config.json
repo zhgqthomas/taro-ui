@@ -1,0 +1,298 @@
+{
+  "description": "项目配置文件。",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "minified": false,
+    "newFeature": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.2.4",
+  "appid": "wx1c6850423c0ff174",
+  "projectname": "taro-ui-sample",
+  "miniprogramRoot": "./",
+  "scripts": {},
+  "condition": {
+    "search": {
+      "current": -1,
+      "list": []
+    },
+    "conversation": {
+      "current": -1,
+      "list": []
+    },
+    "plugin": {
+      "current": -1,
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "miniprogram": {
+      "current": 42,
+      "list": [
+        {
+          "id": -1,
+          "name": "分类列表",
+          "pathName": "pages/panel/basic/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "颜色",
+          "pathName": "pages/basic/color/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "字体",
+          "pathName": "pages/basic/typo/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "图标",
+          "pathName": "pages/basic/icon/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "视图 - 徽章",
+          "pathName": "pages/view/badge/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "操作反馈 - 活动指示器",
+          "pathName": "pages/action/activity-indicator/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "基础 - 按钮",
+          "pathName": "pages/basic/button/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "视图 - 通告栏",
+          "pathName": "pages/view/noticebar/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "视图 - 标签",
+          "pathName": "pages/view/tag/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "视图 - 头像",
+          "pathName": "pages/view/avatar/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "视图 - 文章",
+          "pathName": "pages/view/article/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "操作反馈 - ActionSheet",
+          "pathName": "pages/action/action-sheet/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "操作反馈 - 活动指示器",
+          "pathName": "pages/action/activity-indicator/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "操作反馈 - 模态框",
+          "pathName": "pages/action/modal/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "操作反馈 - 进度条",
+          "pathName": "pages/action/progress/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "操作反馈 - 轻提示",
+          "pathName": "pages/action/toast/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "表单 - 输入框",
+          "pathName": "pages/form/input/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "表单 - 单选框",
+          "pathName": "pages/form/radio/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "表单 - 复选框",
+          "pathName": "pages/form/checkbox/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "表单 - 开关",
+          "pathName": "pages/form/switch/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "表单 - 评分",
+          "pathName": "pages/form/rate/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "表单 - 数字输入框",
+          "pathName": "pages/form/input-number/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "表单 - 多行文本框",
+          "pathName": "pages/form/textarea/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "布局 - Flex",
+          "pathName": "pages/layout/flex/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "布局 - 列表",
+          "pathName": "pages/layout/list/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "布局 - 浮动弹层",
+          "pathName": "pages/layout/float-layout/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "布局 - 卡片",
+          "pathName": "pages/layout/card/index",
+          "query": ""
+        },
+        {
+          "id": 27,
+          "name": "导航 - NavBar",
+          "pathName": "pages/navigation/navbar/index",
+          "query": ""
+        },
+        {
+          "id": 28,
+          "name": "导航 - TabBar",
+          "pathName": "pages/navigation/tabbar/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "导航 - Tabs",
+          "pathName": "pages/navigation/tabs/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "导航 - 分段器",
+          "pathName": "pages/navigation/segmented-control/index",
+          "query": ""
+        },
+        {
+          "id": 31,
+          "name": "视图 - Timeline",
+          "pathName": "pages/view/timeline/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "导航 - Pagination",
+          "pathName": "pages/navigation/pagination/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "导航 - Drawer",
+          "pathName": "pages/navigation/drawer/index",
+          "query": ""
+        },
+        {
+          "id": 34,
+          "name": "分类页 - 基础",
+          "pathName": "pages/panel/index",
+          "query": "id=basic"
+        },
+        {
+          "id": -1,
+          "name": "布局 - Grid",
+          "pathName": "pages/layout/grid/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "表单 - Picker",
+          "pathName": "pages/form/picker/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "表单 - Picker View",
+          "pathName": "pages/form/picker-view/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "表单 - Slider",
+          "pathName": "pages/form/slider/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "视图 - Swiper",
+          "pathName": "pages/view/swiper/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "操作反馈 - Swipe Action",
+          "pathName": "pages/action/swipe-action/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "布局 - Accordion",
+          "pathName": "pages/layout/accordion/index",
+          "query": ""
+        },
+        {
+          "id": -1,
+          "name": "表单 - SearchBar",
+          "pathName": "pages/form/search-bar/index"
+        }
+      ]
+    }
+  }
+}

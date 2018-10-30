@@ -1,0 +1,78 @@
+
+
+
+@charset "UTF-8";
+/**
+ * Default Theme
+ */
+/**
+ * Mixes a color with white. It's different from lighten()
+ *
+ * @param {color} $color
+ * @param {number (percentage)} $percent [The amout of white to be mixed in]
+ * @return {color}
+ *
+ * @example
+ *   .element {
+ *     background-color: tint(#6ecaa6 , 40%);
+ *   }
+ *
+ *   // CSS Output
+ *   .element {
+ *     background-color: #a8dfc9;
+ *   }
+ */
+/* The Color of O2Team Brand */
+/* Color */
+/* Color Palette */
+/* Text Color */
+/* Link */
+/* 背景色 */
+/* 边框颜色 */
+/* 图标颜色 */
+/* Border Radius */
+/* 透明度 */
+/* Font */
+/* Line Height */
+/* 水平间距 */
+/* 垂直间距 */
+/* 图标尺寸 */
+/* z-index */
+/* timing function */
+/**
+ * CSS cubic-bezier timing functions
+ * http://bourbon.io/docs/#timing-functions
+ */
+.at-article {
+  word-break: break-all;
+  word-wrap: break-word;
+  line-height: 1.5; }
+  .at-article__h1, .at-article__h2, .at-article__h3 {
+    color: #333;
+    margin: 0 30rpx; }
+  .at-article__h1 {
+    margin-top: 30rpx;
+    font-size: 48rpx;
+    line-height: 72rpx; }
+  .at-article__info {
+    font-size: 28rpx;
+    color: #CCC;
+    line-height: 42rpx;
+    margin: 0 30rpx; }
+  .at-article__h2 {
+    font-size: 40rpx;
+    line-height: 60rpx;
+    margin-top: 30rpx; }
+  .at-article__h3 {
+    font-size: 32rpx;
+    line-height: 48rpx; }
+  .at-article__p {
+    font-size: 28rpx;
+    color: #666;
+    line-height: 42rpx;
+    margin: 25rpx 30rpx 0; }
+  .at-article__img {
+    width: 690rpx;
+    display: block;
+    margin: 20rpx auto 0;
+    border-radius: 4rpx; }

@@ -1,0 +1,40 @@
+<block>
+    <view class="page">
+        <docs-header title="TabBar 标签栏" __triggerObserer="{{ _triggerObserer }}"></docs-header>
+        <view class="doc-body">
+            <view class="panel">
+                <view class="panel__title">文本标签栏</view>
+                <view class="panel__content no-padding">
+                    <at-tab-bar tabList="{{tabList1}}" __triggerObserer="{{ _triggerObserer }}"
+                    bindonclick="handleClick" current="{{current1}}" __fn_onClick="{{true}}"
+                    data-e-handleClick-so="this" data-e-handleClick-a-a="{{1}}"></at-tab-bar>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">图标文本标签栏</view>
+                <view class="panel__content no-padding">
+                    <at-tab-bar tabList="{{tabList2}}" __triggerObserer="{{ _triggerObserer }}"
+                    bindonclick="handleClick" current="{{current2}}" __fn_onClick="{{true}}"
+                    data-e-handleClick-so="this" data-e-handleClick-a-a="{{2}}"></at-tab-bar>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">自定义图标颜色、字体颜色、背景颜色</view>
+                <view class="panel__content no-padding">
+                    <at-tab-bar backgroundColor="#FAFBFC" __triggerObserer="{{ _triggerObserer }}"
+                    color="#ea6bb8" selectedColor="#e64340" tabList="{{tabList2}}" bindonclick="handleClick"
+                    current="{{current3}}" __fn_onClick="{{true}}" data-e-handleClick-so="this"
+                    data-e-handleClick-a-a="{{3}}"></at-tab-bar>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">固定底部</view>
+                <view class="panel__content no-padding" style="padding-bottom: 24px;">
+                    <at-tab-bar fixed="{{true}}" __triggerObserer="{{ _triggerObserer }}"
+                    tabList="{{tabList2}}" bindonclick="handleClick" current="{{current4}}"
+                    __fn_onClick="{{true}}" data-e-handleClick-so="this" data-e-handleClick-a-a="{{4}}"></at-tab-bar>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

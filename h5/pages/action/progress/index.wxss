@@ -1,0 +1,8 @@
+
+.progress-page .example-item__buttons {
+  margin-top: 20rpx; }
+  .progress-page .example-item__buttons .btn {
+    display: inline-block;
+    margin-left: 12rpx; }
+    .progress-page .example-item__buttons .btn:first-child {
+      margin-left: 0; }

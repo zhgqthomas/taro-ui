@@ -1,0 +1,51 @@
+<block>
+    <view class="page">
+        <docs-header title="Card 卡片" __triggerObserer="{{ _triggerObserer }}"></docs-header>
+        <view class="doc-body">
+            <view class="panel">
+                <view class="panel__title">基础卡片</view>
+                <view class="panel__content no-padding">
+                    <view class="example-item">
+                        <at-card title="这是个标题" __triggerObserer="{{ _triggerObserer }}" bindonclick="handleClick"
+                        __fn_onClick="{{true}}">这也是内容区 可以随意定义功能</at-card>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">带缩略图的卡片</view>
+                <view class="panel__content no-padding">
+                    <view class="example-item">
+                        <at-card title="这是个标题" __triggerObserer="{{ _triggerObserer }}" thumb="http://img10.360buyimg.com/jdphoto/s72x72_jfs/t5872/209/5240187906/2872/8fa98cd/595c3b2aN4155b931.png">这也是内容区 可以随意定义功能</at-card>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">带小信息的卡片</view>
+                <view class="panel__content no-padding">
+                    <view class="example-item">
+                        <at-card note="小Tips" __triggerObserer="{{ _triggerObserer }}" title="这是个标题"
+                        thumb="http://img10.360buyimg.com/jdphoto/s72x72_jfs/t5872/209/5240187906/2872/8fa98cd/595c3b2aN4155b931.png">这也是内容区 可以随意定义功能</at-card>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">完整的卡片</view>
+                <view class="panel__content no-padding">
+                    <view class="example-item">
+                        <at-card note="小Tips" __triggerObserer="{{ _triggerObserer }}" extra="额外信息"
+                        title="这是个标题" thumb="http://img10.360buyimg.com/jdphoto/s72x72_jfs/t5872/209/5240187906/2872/8fa98cd/595c3b2aN4155b931.png">这也是内容区 可以随意定义功能</at-card>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">通栏卡片</view>
+                <view class="panel__content no-padding">
+                    <view class="example-item">
+                        <at-card isFull="{{true}}" __triggerObserer="{{ _triggerObserer }}" note="小Tips"
+                        extra="额外信息" title="这是个标题" thumb="http://img10.360buyimg.com/jdphoto/s72x72_jfs/t5872/209/5240187906/2872/8fa98cd/595c3b2aN4155b931.png">这也是内容区 可以随意定义功能 这也是内容区 可以随意定义功能 这也是内容区 可以随意定义功能</at-card>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>

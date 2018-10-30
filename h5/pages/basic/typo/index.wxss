@@ -1,0 +1,51 @@
+
+.table-typo {
+  padding: 0 28rpx; }
+  .table-typo__head {
+    padding: 20rpx 32rpx;
+    color: #AFB9CC;
+    font-size: 28rpx;
+    border: 1PX solid #C4D9E7;
+    border-radius: 8rpx; }
+    .table-typo__head .thead {
+      display: inline-block; }
+      .table-typo__head .thead:nth-child(1) {
+        width: 44%; }
+      .table-typo__head .thead:nth-child(2) {
+        width: 18%; }
+  .table-typo__body {
+    margin-top: 20rpx; }
+  .table-typo__line {
+    margin-top: 20rpx;
+    padding: 0 32rpx;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 80rpx;
+    color: #354052;
+    font-size: 28rpx; }
+    .table-typo__line:nth-child(2n+1) {
+      background-color: #FAFBFC; }
+    .table-typo__line .col {
+      display: inline-block; }
+      .table-typo__line .col:nth-child(1) {
+        width: 44%; }
+      .table-typo__line .col:nth-child(2) {
+        width: 18%; }
+      .table-typo__line .col.h0 {
+        font-size: 40rpx; }
+      .table-typo__line .col.h1 {
+        font-size: 36rpx; }
+      .table-typo__line .col.h2 {
+        font-size: 32rpx; }
+      .table-typo__line .col.h3 {
+        font-size: 28rpx; }
+      .table-typo__line .col.h4 {
+        font-size: 24rpx; }
+      .table-typo__line .col.h5 {
+        font-size: 20rpx; }

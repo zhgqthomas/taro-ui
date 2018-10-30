@@ -1,0 +1,89 @@
+<block>
+    <view class="page">
+        <docs-header title="Modal 模态框" __triggerObserer="{{ _triggerObserer }}"></docs-header>
+        <view class="doc-body">
+            <view class="panel">
+                <view class="panel__title">基础模态框</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-button bindonclick="handleClick" __triggerObserer="{{ _triggerObserer }}"
+                        __fn_onClick="{{true}}" data-e-handleClick-so="this" data-e-handleClick-a-a="{{1}}">打开基础模态框</at-button>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">单个按钮</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-button bindonclick="handleClick" __triggerObserer="{{ _triggerObserer }}"
+                        __fn_onClick="{{true}}" data-e-handleClick-so="this" data-e-handleClick-a-a="{{2}}">打开单个按钮模态框</at-button>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">无标题</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-button bindonclick="handleClick" __triggerObserer="{{ _triggerObserer }}"
+                        __fn_onClick="{{true}}" data-e-handleClick-so="this" data-e-handleClick-a-a="{{3}}">打开无标题模态框</at-button>
+                    </view>
+                </view>
+            </view>
+            <view class="panel">
+                <view class="panel__title">简化使用</view>
+                <view class="panel__content">
+                    <view class="example-item">
+                        <at-button bindonclick="handleClick" __triggerObserer="{{ _triggerObserer }}"
+                        __fn_onClick="{{true}}" data-e-handleClick-so="this" data-e-handleClick-a-a="{{4}}">打开简化使用模态框</at-button>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <at-modal isOpened="{{isOpened1}}" __triggerObserer="{{ _triggerObserer }}"
+        bindonclose="closeModal" __fn_onClose="{{true}}" data-e-closeModal-so="this"
+        data-e-closeModal-a-a="{{1}}" data-e-closeModal-a-b="Modal被关闭了">
+            <at-modal-header __triggerObserer="{{ _triggerObserer }}">标题</at-modal-header>
+            <at-modal-content __triggerObserer="{{ _triggerObserer }}">
+                <view class="modal-content">这里是正文内容，欢迎加入京东凹凸实验室 这里是正文内容，欢迎加入京东凹凸实验室 这里是正文内容，欢迎加入京东凹凸实验室</view>
+            </at-modal-content>
+            <at-modal-action __triggerObserer="{{ _triggerObserer }}">
+                <button bindtap="closeModal" data-e-closeModal-so="this" data-e-closeModal-a-a="{{1}}"
+                data-e-closeModal-a-b="点击了取消">取消</button>
+                <button style="color:#6190E8" bindtap="closeModal" data-e-closeModal-so="this"
+                data-e-closeModal-a-a="{{1}}" data-e-closeModal-a-b="点击了确定">确定</button>
+            </at-modal-action>
+        </at-modal>
+        <at-modal isOpened="{{isOpened2}}" __triggerObserer="{{ _triggerObserer }}"
+        bindonclose="closeModal" __fn_onClose="{{true}}" data-e-closeModal-so="this"
+        data-e-closeModal-a-a="{{2}}" data-e-closeModal-a-b="Modal被关闭了">
+            <at-modal-header __triggerObserer="{{ _triggerObserer }}">标题</at-modal-header>
+            <at-modal-content __triggerObserer="{{ _triggerObserer }}">
+                <view class="modal-content">这里是正文内容，欢迎加入京东凹凸实验室 这里是正文内容，欢迎加入京东凹凸实验室 这里是正文内容，欢迎加入京东凹凸实验室</view>
+            </at-modal-content>
+            <at-modal-action __triggerObserer="{{ _triggerObserer }}">
+                <button bindtap="closeModal" data-e-closeModal-so="this" data-e-closeModal-a-a="{{2}}"
+                data-e-closeModal-a-b="点击了确定">确定</button>
+            </at-modal-action>
+        </at-modal>
+        <at-modal isOpened="{{isOpened3}}" __triggerObserer="{{ _triggerObserer }}"
+        bindonclose="closeModal" __fn_onClose="{{true}}" data-e-closeModal-so="this"
+        data-e-closeModal-a-a="{{3}}" data-e-closeModal-a-b="Modal被关闭了">
+            <at-modal-content __triggerObserer="{{ _triggerObserer }}">
+                <view class="modal-content">这里是正文内容，欢迎加入京东凹凸实验室 这里是正文内容，欢迎加入京东凹凸实验室 这里是正文内容，欢迎加入京东凹凸实验室</view>
+            </at-modal-content>
+            <at-modal-action __triggerObserer="{{ _triggerObserer }}">
+                <button bindtap="closeModal" data-e-closeModal-so="this" data-e-closeModal-a-a="{{3}}"
+                data-e-closeModal-a-b="点击了取消">取消</button>
+                <button style="color:#6190E8" bindtap="closeModal" data-e-closeModal-so="this"
+                data-e-closeModal-a-a="{{3}}" data-e-closeModal-a-b="点击了确定">确定</button>
+            </at-modal-action>
+        </at-modal>
+        <at-modal isOpened="{{isOpened4}}" __triggerObserer="{{ _triggerObserer }}"
+        title="标题" cancelText="取消" confirmText="确认" content="欢迎加入京东凹凸实验室\n\r欢迎加入京东凹凸实验室"
+        bindonclose="closeModal" bindoncancel="closeModal" bindonconfirm="closeModalConfirm"
+        __fn_onClose="{{true}}" data-e-closeModal-so="this" data-e-closeModal-a-a="{{4}}"
+        data-e-closeModal-a-b="点击了取消" __fn_onCancel="{{true}}" __fn_onConfirm="{{true}}"
+        data-e-closeModalConfirm-so="this" data-e-closeModalConfirm-a-a="{{4}}"
+        data-e-closeModalConfirm-a-b="点击了确认"></at-modal>
+    </view>
+</block>

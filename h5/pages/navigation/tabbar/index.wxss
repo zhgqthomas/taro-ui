@@ -1,0 +1,13 @@
+
+.example__body {
+  background-color: #f8f8f8;
+  min-height: 100rpx;
+  padding: 30rpx 10rpx 80rpx; }
+  .example__body .item {
+    margin-bottom: 10rpx; }
+  .example__body .tab-content {
+    font-size: 25rpx;
+    padding: 20rpx;
+    text-align: center;
+    border-top: 2rpx solid #f8f8f8;
+    background-color: #fff; }
