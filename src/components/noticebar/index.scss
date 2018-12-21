@@ -99,6 +99,12 @@ $noticebar-icon-size: 26px;
     }
   }
 
+  &--alipay {
+    .at-noticebar__content-inner {
+      animation: none;
+    }
+  }
+
   &__more {
     position: absolute;
     right: $spacing-h-lg;
