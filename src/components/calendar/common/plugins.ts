@@ -32,6 +32,9 @@ export function handleActive (
   item.isSelectedHead = _value.isSame(dayjsStart)
   item.isSelectedTail = _value.isSame(dayjsEnd)
 
+  // if (item.text === 17) {
+  //   console.log(item)
+  // }
   item.isToday = _value.diff(dayjs(Date.now()).startOf('day'), 'day') === 0
 
   return item

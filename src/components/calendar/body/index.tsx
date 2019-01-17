@@ -57,16 +57,18 @@ export default class AtCalendarBody extends Taro.Component<
       minDate,
       maxDate,
       generateDate,
-      selectedDate,
-      selectedDates
+      selectedDate
+      // selectedDates
     } = props
+
+    // console.log('body', selectedDate)
 
     this.generateFunc = generateCalendarGroup({
       format,
       minDate,
       maxDate,
-      marks,
-      selectedDates
+      marks
+      // selectedDates
     })
     const listGroup = this.getGroups(generateDate, selectedDate)
 
@@ -84,10 +86,10 @@ export default class AtCalendarBody extends Taro.Component<
   ): ListGroup {
     const dayjsDate = dayjs(generateDate)
     const arr: ListGroup = []
-    const preList: Calendar.ListInfo<Calendar.Item> = this.generateFunc(
-      dayjsDate.subtract(1, 'month').valueOf(),
-      selectedDate
-    )
+    // const preList: Calendar.ListInfo<Calendar.Item> = this.generateFunc(
+    //   dayjsDate.subtract(1, 'month').valueOf(),
+    //   selectedDate
+    // )
 
     const nowList: Calendar.ListInfo<Calendar.Item> = this.generateFunc(
       generateDate,
@@ -95,19 +97,21 @@ export default class AtCalendarBody extends Taro.Component<
       true
     )
 
-    const nextList: Calendar.ListInfo<Calendar.Item> = this.generateFunc(
-      dayjsDate.add(1, 'month').valueOf(),
-      selectedDate
-    )
+    // const nextList: Calendar.ListInfo<Calendar.Item> = this.generateFunc(
+    //   dayjsDate.add(1, 'month').valueOf(),
+    //   selectedDate
+    // )
 
     const preListIndex =
       this.currentSwiperIndex === 0 ? 2 : this.currentSwiperIndex - 1
     const nextListIndex =
       this.currentSwiperIndex === 2 ? 0 : this.currentSwiperIndex + 1
 
-    arr[preListIndex] = preList
-    arr[nextListIndex] = nextList
+    // arr[preListIndex] = preList
+    // arr[nextListIndex] = nextList
     arr[this.currentSwiperIndex] = nowList
+
+    // console.log(nowList)
 
     return arr
   }
@@ -119,16 +123,18 @@ export default class AtCalendarBody extends Taro.Component<
       minDate,
       maxDate,
       generateDate,
-      selectedDate,
-      selectedDates
+      selectedDate
+      // selectedDates
     } = nextProps
+
+    console.log('componentWillReceiveProps')
 
     this.generateFunc = generateCalendarGroup({
       format,
       minDate,
       maxDate,
-      marks,
-      selectedDates
+      marks
+      // selectedDates
     })
     const listGroup = this.getGroups(generateDate, selectedDate)
 
@@ -139,9 +145,9 @@ export default class AtCalendarBody extends Taro.Component<
   }
 
   componentDidMount () {
-    delayQuerySelector(this, '.at-calendar-slider__main').then(res => {
-      this.maxWidth = res[0].width
-    })
+    // delayQuerySelector(this, '.at-calendar-slider__main').then(res => {
+    //   this.maxWidth = res[0].width
+    // })
   }
 
   @bind
@@ -279,7 +285,8 @@ export default class AtCalendarBody extends Taro.Component<
     }
 
     /* 需要 Taro 组件库维护 Swiper 使 小程序 和 H5 的表现保持一致  */
-    if (process.env.TARO_ENV === 'h5') {
+    if (Taro.getEnv() === Taro.ENV_TYPE.ALIPAY) {
+      console.log('Parent\n', listGroup[1].list)
       return (
         <View
           className={classnames(
@@ -297,18 +304,18 @@ export default class AtCalendarBody extends Taro.Component<
               'main__body--slider': isSwiper,
               'main__body--animate': isAnimate
             })}
-            style={{
-              transform: isSwiper
-                ? `translateX(-100%) translate3d(${offsetSize},0,0)`
-                : '',
-              WebkitTransform: isSwiper
-                ? `translateX(-100%) translate3d(${offsetSize}px,0,0)`
-                : ''
-            }}
+            // style={{
+            //   transform: isSwiper
+            //     ? `translateX(-100%) translate3d(${offsetSize},0,0)`
+            //     : '',
+            //   WebkitTransform: isSwiper
+            //     ? `translateX(-100%) translate3d(${offsetSize}px,0,0)`
+            //     : ''
+            // }}
           >
-            <View className='body__slider body__slider--pre'>
+            {/* <View className='body__slider body__slider--pre'>
               <AtCalendarDateList list={listGroup[0].list} />
-            </View>
+            </View> */}
             <View className='body__slider body__slider--now'>
               <AtCalendarDateList
                 list={listGroup[1].list}
@@ -316,9 +323,9 @@ export default class AtCalendarBody extends Taro.Component<
                 onLongClick={this.props.onLongClick}
               />
             </View>
-            <View className='body__slider body__slider--next'>
+            {/* <View className='body__slider body__slider--next'>
               <AtCalendarDateList list={listGroup[2].list} />
-            </View>
+            </View> */}
           </View>
         </View>
       )

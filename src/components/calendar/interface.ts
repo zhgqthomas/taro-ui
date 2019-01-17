@@ -61,7 +61,7 @@ export interface DefaultProps {
 
   isMultiSelect: boolean
 
-  selectedDates: Array<Calendar.SelectedDate>
+  // selectedDates: Array<Calendar.SelectedDate>
 }
 
 export interface State {

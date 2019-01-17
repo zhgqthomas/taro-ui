@@ -21,7 +21,7 @@ const defaultProps: DefaultProps = {
   isSwiper: true,
   hideArrow: false,
   isVertical: false,
-  selectedDates: [],
+  // selectedDates: [],
   isMultiSelect: false,
   format: 'YYYY-MM-DD',
   currentDate: Date.now(),
@@ -258,8 +258,10 @@ export default class AtCalendar extends Taro.Component<Props, Readonly<State>> {
       hideArrow,
       isVertical,
       monthFormat,
-      selectedDates
+      // selectedDates
     } = this.props as PropsWithDefaults
+
+    // console.log('Parent Render',selectedDate)
 
     return (
       <View className={classnames('at-calendar', className)}>
@@ -281,7 +283,7 @@ export default class AtCalendar extends Taro.Component<Props, Readonly<State>> {
           isSwiper={isSwiper}
           isVertical={isVertical}
           selectedDate={selectedDate}
-          selectedDates={selectedDates}
+          // selectedDates={selectedDates}
           generateDate={generateDate}
           onDayClick={this.handleDayClick}
           onSwipeMonth={this.setGenerateDate}

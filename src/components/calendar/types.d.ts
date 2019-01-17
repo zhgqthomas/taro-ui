@@ -47,7 +47,7 @@ declare namespace Calendar {
 
     format: string
 
-    selectedDates: Array<SelectedDate>
+    // selectedDates: Array<SelectedDate>
 
     minDate?: DateArg
 

@@ -80,7 +80,7 @@ export default class Index extends Component {
             </View>
           </View>
 
-          <View className='panel'>
+          {/* <View className='panel'>
             <View className='panel__title'>跳转到指定日期</View>
             <View className='panel__content'>
               <AtCalendar currentDate={now} />
@@ -173,7 +173,7 @@ export default class Index extends Component {
                 </AtButton>
               </View>
             </View>
-          </View>
+          </View> */}
         </View>
       </View>
     )
