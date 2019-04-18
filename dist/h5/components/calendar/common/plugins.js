@@ -1,5 +1,4 @@
 import dayjs from 'dayjs';
-import _forEach from 'lodash/forEach';
 import _isEmpty from 'lodash/isEmpty';
 export function handleActive(args, item) {
   const { selectedDate } = args;
@@ -57,11 +56,8 @@ export function handleValid(args, item) {
   const { _value } = item;
   const { validDates } = options;
   if (!_isEmpty(validDates)) {
-    let isInclude = false;
-    _forEach(validDates, date => {
-      if (dayjs(date.value).startOf('day').isSame(_value)) {
-        isInclude = true;
-      }
+    const isInclude = validDates.some(date => {
+      return dayjs(date.value).startOf('day').isSame(_value);
     });
     item.isDisabled = !isInclude;
   }
